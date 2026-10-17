@@ -137,14 +137,64 @@ document.addEventListener('DOMContentLoaded', () => {
     }
   });
 
-  // Reservation form submission demo
-  const bookingForm = document.getElementById('bookingForm');
-  if (bookingForm) {
-    bookingForm.addEventListener('submit', (e) => {
+  // 5. Reservation Subpage Form Logic (rezerwacja.html)
+  const resDateInput = document.getElementById('resDate');
+  if (resDateInput) {
+    // Prevent selecting dates in the past
+    resDateInput.min = new Date().toISOString().split('T')[0];
+  }
+
+  const recaptchaCard = document.getElementById('recaptchaCard');
+  const recaptchaCheck = document.getElementById('recaptchaCheck');
+  let isRecaptchaVerified = false;
+
+  if (recaptchaCard && recaptchaCheck) {
+    function toggleRecaptcha() {
+      isRecaptchaVerified = !isRecaptchaVerified;
+      if (isRecaptchaVerified) {
+        recaptchaCheck.classList.add('checked');
+        recaptchaCard.setAttribute('aria-checked', 'true');
+      } else {
+        recaptchaCheck.classList.remove('checked');
+        recaptchaCard.setAttribute('aria-checked', 'false');
+      }
+    }
+
+    recaptchaCard.addEventListener('click', toggleRecaptcha);
+    recaptchaCard.addEventListener('keydown', (e) => {
+      if (e.key === ' ' || e.key === 'Enter') {
+        e.preventDefault();
+        toggleRecaptcha();
+      }
+    });
+  }
+
+  const resPageForm = document.getElementById('reservationPageForm');
+  const resSuccessMessage = document.getElementById('resSuccessMessage');
+
+  if (resPageForm) {
+    resPageForm.addEventListener('submit', (e) => {
       e.preventDefault();
-      alert('Dziękujemy! Otrzymaliśmy zapytanie o rezerwację stolika. Skontaktujemy się z Państwem telefonicznie w celu potwierdzenia.');
-      closeModal();
-      bookingForm.reset();
+
+      // Check required fields
+      if (!resPageForm.checkValidity()) {
+        resPageForm.reportValidity();
+        return;
+      }
+
+      if (!isRecaptchaVerified) {
+        alert('Prosimy o zaznaczenie pola "Nie jestem robotem".');
+        if (recaptchaCard) recaptchaCard.focus();
+        return;
+      }
+
+      // Hide form and show confirmation message
+      resPageForm.style.display = 'none';
+      if (resSuccessMessage) {
+        resSuccessMessage.classList.add('active');
+        resSuccessMessage.scrollIntoView({ behavior: 'smooth', block: 'center' });
+      }
     });
   }
 });
+

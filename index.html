@@ -36,17 +36,25 @@
         <nav class="main-nav" aria-label="Główna nawigacja">
           <ul class="nav-links">
             <li><a href="#o-nas" class="nav-link">O nas</a></li>
-            <li><a href="#menu" class="nav-link">Menu</a></li>
-            <li><a href="#podarunek" class="nav-link">Podarunek</a></li>
+            <li class="has-submenu">
+              <a href="#menu" class="nav-link">Menu</a>
+              <ul class="nav-submenu">
+                <li><a href="#dania" class="submenu-link">Dania</a></li>
+                <li><a href="#napoje" class="submenu-link">Napoje</a></li>
+                <li><a href="#alkohole" class="submenu-link">Alkohole</a></li>
+              </ul>
+            </li>
+            <li><a href="#dostawa" class="nav-link">Dostawa</a></li>
+            <li><a href="#karta-podarunkowa" class="nav-link">Karta podarunkowa</a></li>
             <li><a href="#kariera" class="nav-link">Kariera</a></li>
             <li><a href="#kontakt" class="nav-link">Kontakt</a></li>
           </ul>
         </nav>
 
         <div class="header-action-column">
-          <button type="button" class="btn-circle-booking open-modal-trigger" aria-label="Rezerwuj stolik">
+          <a href="rezerwacja.html" class="btn-circle-booking" aria-label="Rezerwuj stolik">
             <span>Rezerwuj<br>stolik</span>
-          </button>
+          </a>
         </div>
       </div>
 
@@ -156,31 +164,26 @@
   <footer class="site-footer" id="kontakt">
     <div class="footer-container">
       
-      <div class="footer-col">
-        <h3>Kontakt</h3>
-        <address class="footer-address">
-          ul. Rynek 21<br>
-          63-400 Ostrów Wielkopolski
-        </address>
-        <a href="tel:+48533212120" class="footer-phone" title="Zadzwoń i zarezerwuj stolik">
-          <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
-            <path d="M6.62 10.79a15.05 15.05 0 006.59 6.59l2.2-2.2a1 1 0 011.02-.24c1.12.37 2.33.57 3.57.57a1 1 0 011 1V20a1 1 0 01-1 1A17 17 0 013 4a1 1 0 011-1h3.5a1 1 0 011 1c0 1.25.2 2.45.57 3.57a1 1 0 01-.25 1.02l-2.2 2.2z"/>
-          </svg>
-          Rezerwacje: +48 533 212 120
-        </a>
+      <div class="footer-col footer-contact-col">
+        <h3 class="footer-heading">Kontakt</h3>
+        <div class="footer-text-block">
+          <p>ul. Rynek 21</p>
+          <p>63-400 Ostrów Wielkopolski</p>
+          <p><a href="tel:+48533212120" class="footer-link-item">Rezerwacje +48 533 212 120</a></p>
+        </div>
       </div>
 
-      <div class="footer-col">
-        <h3>Godziny otwarcia</h3>
-        <div class="hours-table">
-          <p><strong>poniedziałek – sobota:</strong> 11:00 – do ostatniego gościa</p>
-          <p><strong>niedziela:</strong> 12:00 – 23:00</p>
-          <p class="highlight" style="margin-top: 8px; opacity: 0.9;">kuchnia czynna do 22:00</p>
+      <div class="footer-col footer-hours-col">
+        <h3 class="footer-heading">Godziny otwarcia</h3>
+        <div class="footer-text-block">
+          <p>poniedziałek - sobota 11:00 - do ostatniego gościa</p>
+          <p>niedziela 12:00 - 23:00</p>
+          <p>kuchnia czynna do 22:00</p>
         </div>
       </div>
 
       <div class="footer-col footer-brand-col">
-        <img src="assets/images/Aura_logo_white_crop.png" alt="Aura Restauracja à la carte" class="footer-logo">
+        <img src="assets/images/Aura_logo_crop.png" alt="Aura Restauracja à la carte" class="footer-logo">
         <p class="footer-tagline">Zawsze w dobrej aurze</p>
         <div class="footer-socials">
           <a href="https://www.instagram.com/aura.restauracja?igsh=MXBmbDlhY2dtZnp1bA==" target="_blank" rel="noopener" class="footer-social-link" aria-label="Instagram">
@@ -200,65 +203,7 @@
     </div>
   </footer>
 
-  <!-- =========================================================
-       RESERVATION MODAL
-       ========================================================= -->
-  <div class="modal-backdrop" id="reservationModal" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
-    <div class="reservation-modal">
-      <button type="button" class="modal-close-btn" id="modalCloseBtn" aria-label="Zamknij">
-        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-          <line x1="18" y1="6" x2="6" y2="18"></line>
-          <line x1="6" y1="6" x2="18" y2="18"></line>
-        </svg>
-      </button>
 
-      <h3 class="modal-title" id="modalTitle">Zarezerwuj stolik w Aurze</h3>
-      <p class="modal-subtitle">Zadbamy o wyjątkową atmosferę Twojego spotkania.</p>
-
-      <div class="modal-direct-call">
-        <p>Najszybsza rezerwacja telefoniczna:</p>
-        <a href="tel:+48533212120">+48 533 212 120</a>
-      </div>
-
-      <form id="bookingForm">
-        <div class="form-row">
-          <div class="form-group">
-            <label for="bookDate">Data</label>
-            <input type="date" id="bookDate" class="form-input" required>
-          </div>
-          <div class="form-group">
-            <label for="bookTime">Godzina</label>
-            <input type="time" id="bookTime" class="form-input" required>
-          </div>
-        </div>
-
-        <div class="form-row">
-          <div class="form-group">
-            <label for="bookGuests">Liczba gości</label>
-            <select id="bookGuests" class="form-input" required>
-              <option value="1">1 osoba</option>
-              <option value="2" selected>2 osoby</option>
-              <option value="3">3 osoby</option>
-              <option value="4">4 osoby</option>
-              <option value="5">5 osób</option>
-              <option value="6+">6+ osób</option>
-            </select>
-          </div>
-          <div class="form-group">
-            <label for="bookPhone">Numer telefonu</label>
-            <input type="tel" id="bookPhone" class="form-input" placeholder="+48 ..." required>
-          </div>
-        </div>
-
-        <div class="form-group">
-          <label for="bookName">Imię i nazwisko</label>
-          <input type="text" id="bookName" class="form-input" placeholder="np. Jan Kowalski" required>
-        </div>
-
-        <button type="submit" class="btn-submit">Wyślij prośbę o rezerwację</button>
-      </form>
-    </div>
-  </div>
 
   <script src="assets/js/main.js"></script>
 </body>
