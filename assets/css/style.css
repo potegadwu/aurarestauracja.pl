@@ -745,6 +745,7 @@ footer.site-footer {
   max-width: 860px;
   margin: 0 auto;
   padding: 10px 24px 80px;
+  text-align: center;
 }
 
 .res-intro-p {
@@ -753,7 +754,8 @@ footer.site-footer {
   line-height: 1.85;
   color: #333333;
   text-align: center;
-  margin-bottom: 32px;
+  margin: 0 auto 32px;
+  max-width: 820px;
 }
 
 .res-intro-p strong {
@@ -761,17 +763,32 @@ footer.site-footer {
   color: #111111;
 }
 
-/* Informacja o zaliczce (czysty tekst bez ramek i bez tła) */
-.res-notice-clean {
-  margin-bottom: 36px;
+.res-phone-link {
+  color: var(--aura-teal-dark);
+  font-weight: 600;
+  text-decoration: none;
+  transition: var(--transition);
 }
 
-.res-notice-clean p {
+.res-phone-link:hover {
+  color: var(--aura-teal);
+  text-decoration: underline;
+}
+
+/* Informacja o braku wyboru stolika i zaliczce (wyśrodkowane) */
+.res-notice-clean {
+  margin-bottom: 36px;
+  text-align: center;
+}
+
+.res-paragraph {
   font-size: 1.05rem;
   font-weight: 400;
   line-height: 1.8;
   color: #2b3035;
-  margin: 0;
+  text-align: center;
+  margin: 0 auto 16px;
+  max-width: 800px;
 }
 
 .res-section-header {
@@ -780,22 +797,27 @@ footer.site-footer {
   letter-spacing: 0.12em;
   text-transform: uppercase;
   color: var(--aura-teal);
-  margin-bottom: 16px;
+  text-align: center;
+  margin-bottom: 18px;
 }
 
-/* Opcje rezerwacji (czysty tekst bez ramek/kart) */
+/* Opcje rezerwacji (czysty tekst, wyśrodkowany) */
 .res-options-section {
-  margin-bottom: 36px;
+  margin-bottom: 38px;
+  text-align: center;
 }
 
 .res-options-list {
   display: flex;
   flex-direction: column;
-  gap: 18px;
+  gap: 20px;
+  align-items: center;
 }
 
 .res-option-item {
   padding: 0;
+  text-align: center;
+  max-width: 780px;
 }
 
 .res-option-title {
@@ -803,7 +825,8 @@ footer.site-footer {
   font-size: 1.25rem;
   font-weight: 600;
   color: #1f2326;
-  margin-bottom: 4px;
+  margin-bottom: 6px;
+  text-align: center;
 }
 
 .res-option-desc {
@@ -811,18 +834,21 @@ footer.site-footer {
   font-weight: 300;
   color: #4a4a4a;
   line-height: 1.7;
-  margin: 0;
+  margin: 0 auto;
+  text-align: center;
 }
 
-/* Ważne informacje (czysty tekst bez ramek i bez bulletów) */
+/* Ważne informacje (czysty tekst, wyśrodkowany, bez bulletów) */
 .res-rules-section {
-  margin-bottom: 52px;
+  margin-bottom: 48px;
+  text-align: center;
 }
 
 .res-rules-clean {
   display: flex;
   flex-direction: column;
-  gap: 10px;
+  gap: 12px;
+  align-items: center;
 }
 
 .res-rule-line {
@@ -830,7 +856,9 @@ footer.site-footer {
   font-weight: 300;
   color: #333333;
   line-height: 1.7;
-  margin: 0;
+  margin: 0 auto;
+  text-align: center;
+  max-width: 780px;
 }
 
 /* =========================================================
@@ -937,7 +965,7 @@ select.field-underline {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  margin-top: 10px;
+  margin: 10px auto 0;
   user-select: none;
 }
 
@@ -1004,9 +1032,53 @@ select.field-underline {
   margin-top: 2px;
 }
 
+/* Przycisk akcji w kółku (załącznik, o 30% mniejszy niż button w headerze: 72px vs 101px) */
+.form-submit-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin-top: 18px;
+}
+
+.btn-circle-submit {
+  width: 72px;
+  height: 72px;
+  border-radius: 50%;
+  background-color: var(--aura-teal); /* #009EB5 / rgb(0, 158, 181) */
+  color: #ffffff;
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  font-family: var(--font-main);
+  font-size: 0.72rem;
+  font-weight: 600;
+  line-height: 1.15;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  cursor: pointer;
+  box-shadow: 0 4px 18px rgba(0, 158, 181, 0.35);
+  transition: var(--transition);
+  padding: 0;
+  user-select: none;
+}
+
+.btn-circle-submit:hover {
+  background-color: var(--aura-teal-dark);
+  transform: scale(1.06);
+  box-shadow: 0 8px 24px rgba(0, 158, 181, 0.48);
+}
+
+.btn-circle-submit:active {
+  transform: scale(0.96);
+}
+
+/* Zachowanie wstecznej kompatybilności */
 .btn-send-request {
   align-self: center;
-  background-color: var(--aura-teal); /* #009EB5 / rgb(0, 158, 181) */
+  background-color: var(--aura-teal);
   color: #ffffff;
   font-family: var(--font-heading);
   font-size: 1.35rem;

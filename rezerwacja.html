@@ -60,25 +60,28 @@
        ========================================================= -->
   <main>
     <section class="page-hero-section">
-      <h1 class="page-title">Rezerwacje</h1>
+      <h1 class="page-title">Zarezerwuj stolik</h1>
       <div class="teal-divider-line"></div>
     </section>
 
     <div class="res-content-wrapper">
       
-      <!-- WPROWADZENIE -->
+      <!-- WPROWADZENIE (WYŚRODKOWANE) -->
       <p class="res-intro-p">
-        Wybierz jedną z dwóch możliwych opcji rezerwacji stolika w restauracji Aura i dokonaj rezerwacji dzwoniąc pod numer <a href="tel:+48533212120" style="color: var(--aura-teal-dark); font-weight: 600; text-decoration: none;">+48 533 212 120</a> lub wypełniając formularz rezerwacyjny, który znajdziesz w dziale rezerwacje poniżej.
+        Wybierz jedną z dwóch możliwych opcji rezerwacji stolika w restauracji Aura i dokonaj rezerwacji dzwoniąc pod numer <a href="tel:+48533212120" class="res-phone-link">+48 533 212 120</a> lub wypełniając formularz rezerwacyjny, który jest poniżej.
       </p>
 
-      <!-- INFORMACJA O ZALICZCE I BRAKU WYBORU STOLIKA (BEZ RAMEK, BEZ MAILA) -->
+      <!-- INFORMACJA O BRAKU WYBORU STOLIKA ORAZ ZALICZCE (WYŚRODKOWANE) -->
       <div class="res-notice-clean">
-        <p>
-          Informujemy, że nie ma możliwości wyboru stolika. Przyjmujemy Państwa sugestie i postaramy się je spełnić, ale nie gwarantujemy wybranego stolika, z uwagi na wielkość sali i mnogość dokonywanych przez Państwa rezerwacji. Pobieramy zaliczkę rezerwacyjną 10 zł od osoby, która zwracana jest Państwu po przybyciu do restauracji.
+        <p class="res-paragraph">
+          Informujemy, że nie ma możliwości wyboru stolika. Przyjmujemy Państwa sugestie i postaramy się je spełnić, ale nie gwarantujemy wybranego stolika, z uwagi na wielkość sali i mnogość dokonywanych przez Państwa rezerwacji.
+        </p>
+        <p class="res-paragraph">
+          Pobieramy zaliczkę rezerwacyjną 10 zł od osoby, która zwracana jest Państwu po przybyciu do restauracji.
         </p>
       </div>
 
-      <!-- MOŻLIWE OPCJE REZERWACJI (BEZ RAMEK) -->
+      <!-- MOŻLIWE OPCJE REZERWACJI (WYŚRODKOWANE) -->
       <section class="res-options-section" aria-labelledby="headingOpcje">
         <h2 id="headingOpcje" class="res-section-header">Możliwe opcje rezerwacji</h2>
         <div class="res-options-list">
@@ -100,22 +103,20 @@
         </div>
       </section>
 
-      <!-- WAŻNE INFORMACJE DOTYCZĄCE REZERWACJI (BEZ RAMEK I BEZ BULLETÓW) -->
+      <!-- WAŻNE INFORMACJE DOTYCZĄCE REZERWACJI (WYŚRODKOWANE) -->
       <section class="res-rules-section" aria-labelledby="headingZasady">
         <h2 id="headingZasady" class="res-section-header">Ważne informacje dotyczące rezerwacji:</h2>
         <div class="res-rules-clean">
-          <p class="res-rule-line">Prosimy o punktualne przybycie, zgodnie z godziną rezerwacji.</p>
-          <p class="res-rule-line">Po 20 minutach niestawienia się Gości rezerwacja stolika zostanie zwolniona.</p>
-          <p class="res-rule-line">Każdą przyjętą rezerwację potwierdzamy, wysyłając SMS na numer podany podczas rezerwacji telefonicznej lub w wiadomości email.</p>
+          <p class="res-rule-line">Prosimy o punktualne przybycie, zgodnie z godziną rezerwacji. Po 20 minutach niestawienia się Gości rezerwacja stolika zostanie zwolniona.</p>
+          <p class="res-rule-line">Każdą przyjętą rezerwację potwierdzamy, dzwoniąc lub wysyłając SMS, na podany w formularzu rezerwacji numer telefonu.</p>
           <p class="res-rule-line">Obsługa może poprosić o okazanie SMS'a przy wejściu, w celu weryfikacji potwierdzenia rezerwacji.</p>
         </div>
       </section>
 
       <!-- =========================================================
-           FORMULARZ: ZAREZERWUJ STOLIK (Załącznik)
+           FORMULARZ REZERWACYJNY (BEZPOŚREDNIO POD TEKSTEM)
            ========================================================= -->
-      <section class="res-form-section" id="formularz" aria-labelledby="formHeading">
-        <h2 id="formHeading" class="res-form-heading">Zarezerwuj stolik</h2>
+      <section class="res-form-section" id="formularz" aria-label="Formularz rezerwacji stolika">
 
         <form id="reservationPageForm" class="booking-custom-form" novalidate>
           
@@ -260,10 +261,12 @@
             </div>
           </div>
 
-          <!-- PRZYCISK: WYŚLIJ ZAPYTANIE! (ZAŁĄCZNIK) -->
-          <button type="submit" class="btn-send-request" id="btnSubmitRes">
-            Wyślij zapytanie!
-          </button>
+          <!-- PRZYCISK: WYŚLIJ ZAPYTANIE! W KÓŁKU (ZAŁĄCZNIK, O 30% MNIEJSZY JAKO BUTTON AKCJI) -->
+          <div class="form-submit-wrapper">
+            <button type="submit" class="btn-circle-submit" id="btnSubmitRes" aria-label="Wyślij zapytanie!">
+              <span>Wyślij<br>zapytanie!</span>
+            </button>
+          </div>
 
         </form>
 
