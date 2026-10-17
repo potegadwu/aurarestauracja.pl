@@ -200,5 +200,73 @@ document.addEventListener('DOMContentLoaded', () => {
       }
     });
   }
+
+  // 6. Menu Page Category Tabs Interactivity (menu.html)
+  const categoryBtns = document.querySelectorAll('.category-btn');
+  const categoryPanels = document.querySelectorAll('.menu-category-panel');
+
+  function activateCategory(catId, shouldScroll = false) {
+    if (!catId) return;
+
+    let targetBtn = null;
+    let targetPanel = null;
+
+    categoryBtns.forEach(btn => {
+      if (btn.getAttribute('data-category') === catId) {
+        btn.classList.add('active');
+        targetBtn = btn;
+      } else {
+        btn.classList.remove('active');
+      }
+    });
+
+    categoryPanels.forEach(panel => {
+      if (panel.getAttribute('data-category') === catId) {
+        panel.classList.add('active');
+        targetPanel = panel;
+      } else {
+        panel.classList.remove('active');
+      }
+    });
+
+    if (shouldScroll && targetPanel) {
+      const stickyNav = document.querySelector('.menu-nav-sticky-section');
+      const offset = (stickyNav ? stickyNav.offsetHeight : 120) + 90;
+      const bodyRect = document.body.getBoundingClientRect().top;
+      const elementRect = targetPanel.getBoundingClientRect().top;
+      const elementPosition = elementRect - bodyRect;
+      const offsetPosition = elementPosition - offset;
+
+      window.scrollTo({
+        top: Math.max(0, offsetPosition),
+        behavior: 'smooth'
+      });
+    }
+  }
+
+  categoryBtns.forEach(btn => {
+    btn.addEventListener('click', () => {
+      const catId = btn.getAttribute('data-category');
+      activateCategory(catId, false);
+      if (history.replaceState) {
+        history.replaceState(null, null, `#${catId}`);
+      } else {
+        location.hash = catId;
+      }
+    });
+  });
+
+  // Handle URL hash on page load or on hashchange
+  function checkUrlHash() {
+    const hash = window.location.hash.replace('#', '');
+    if (hash && hash !== 'alergeny') {
+      activateCategory(hash, false);
+    }
+  }
+
+  if (categoryBtns.length > 0) {
+    checkUrlHash();
+    window.addEventListener('hashchange', checkUrlHash);
+  }
 });
 

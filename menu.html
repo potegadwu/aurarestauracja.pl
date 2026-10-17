@@ -1,0 +1,2979 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Karta Menu | Aura Restauracja à la carte | Ostrów Wielkopolski</title>
+  <meta name="description" content="Zapoznaj się z naszym smacznym menu restauracji Aura w Ostrowie Wielkopolskim! Przekąski, dania główne, zupy, sałaty, burgery, ciasta, napoje i alkohole.">
+  
+  <link rel="icon" type="image/png" href="assets/images/Aura_ikona.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,300;1,400&family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;0,9..144,500;0,9..144,600;0,9..144,700;1,9..144,400;1,9..144,500;1,9..144,600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body class="menu-page">
+
+  <!-- =========================================================
+       GÓRNY PASEK STRONY
+       ========================================================= -->
+  <header class="site-header" id="siteHeader">
+    <div class="header-container">
+      
+      <!-- LEWA STRONA: LOGO + HASŁO ZAWSZE W DOBREJ AURZE -->
+      <div class="header-brand">
+        <a href="index.html" class="logo-link">
+          <img src="assets/images/Aura_logo_crop.png" alt="Aura Restauracja à la carte" class="logo-img">
+        </a>
+        <span class="tagline">ZAWSZE W DOBREJ AURZE</span>
+      </div>
+
+      <!-- PRAWA STRONA: MENU + OKRĄGŁY PRZYCISK REZERWACJI (101px) -->
+      <div class="header-right-area">
+        <nav class="main-nav" aria-label="Główna nawigacja">
+          <ul class="nav-links">
+            <li><a href="index.html#o-nas" class="nav-link">O nas</a></li>
+            <li class="has-submenu">
+              <a href="menu.html" class="nav-link active">Menu</a>
+              <div class="nav-submenu-clean" aria-label="Kategorie menu">
+                <a href="menu.html#przekaski" class="sub-clean-link">Przekąski</a>
+                <span class="sub-sep">/</span>
+                <a href="menu.html#dania-glowne" class="sub-clean-link">Dania główne</a>
+                <span class="sub-sep">/</span>
+                <a href="menu.html#zupy" class="sub-clean-link">Zupy</a>
+                <span class="sub-sep">/</span>
+                <a href="menu.html#salaty" class="sub-clean-link">Sałaty</a>
+                <span class="sub-sep">/</span>
+                <a href="menu.html#burgery" class="sub-clean-link">Burgery</a>
+                <span class="sub-sep">/</span>
+                <a href="menu.html#menu-dzieciece" class="sub-clean-link">Menu dziecięce</a>
+                <span class="sub-sep">/</span>
+                <a href="menu.html#ciasta-i-desery" class="sub-clean-link">Ciasta i desery</a>
+                <span class="sub-sep">/</span>
+                <a href="menu.html#napoje-gorace" class="sub-clean-link">Napoje gorące</a>
+                <span class="sub-sep">/</span>
+                <a href="menu.html#napoje-zimne" class="sub-clean-link">Napoje zimne</a>
+                <span class="sub-sep">/</span>
+                <a href="menu.html#alkohole" class="sub-clean-link">Alkohole</a>
+              </div>
+            </li>
+            <li><a href="index.html#karta-podarunkowa" class="nav-link nav-multiline">Karta<br>podarunkowa</a></li>
+            <li><a href="index.html#przyjecia-eventy" class="nav-link nav-multiline">Przyjęcia<br>& Eventy</a></li>
+            <li><a href="index.html#dostawa" class="nav-link">Dostawa</a></li>
+            <li><a href="index.html#kariera" class="nav-link">Kariera</a></li>
+            <li><a href="#kontakt" class="nav-link">Kontakt</a></li>
+          </ul>
+        </nav>
+
+        <div class="header-action-column">
+          <a href="rezerwacja.html" class="btn-circle-booking" aria-label="Rezerwuj stolik">
+            <span>Rezerwuj<br>stolik</span>
+          </a>
+        </div>
+      </div>
+
+    </div>
+  </header>
+
+  <!-- =========================================================
+       TREŚĆ PODSTRONY MENU
+       ========================================================= -->
+  <main class="menu-main-content">
+    
+    <section class="page-hero-section menu-hero">
+      <h1 class="page-title">Menu</h1>
+      <div class="teal-divider-line"></div>
+    </section>
+
+    <div class="menu-page-wrapper">
+      
+      <!-- GÓRNY PASEK KATEGORII MENU DO PRZEKLIKIWANIA (BEZ APLI, Z ukośnikami /) -->
+      <section class="menu-nav-sticky-section">
+<nav class="menu-categories-nav" aria-label="Kategorie menu">
+  <ul class="categories-list">
+    <li class="category-item">
+      <button type="button" class="category-btn active" data-category="przekaski">
+        Przekąski
+      </button>
+      <span class="category-slash" aria-hidden="true">/</span>
+    </li>
+    <li class="category-item">
+      <button type="button" class="category-btn" data-category="dania-glowne">
+        Dania główne
+      </button>
+      <span class="category-slash" aria-hidden="true">/</span>
+    </li>
+    <li class="category-item">
+      <button type="button" class="category-btn" data-category="zupy">
+        Zupy
+      </button>
+      <span class="category-slash" aria-hidden="true">/</span>
+    </li>
+    <li class="category-item">
+      <button type="button" class="category-btn" data-category="salaty">
+        Sałaty
+      </button>
+      <span class="category-slash" aria-hidden="true">/</span>
+    </li>
+    <li class="category-item">
+      <button type="button" class="category-btn" data-category="burgery">
+        Burgery
+      </button>
+      <span class="category-slash" aria-hidden="true">/</span>
+    </li>
+    <li class="category-item">
+      <button type="button" class="category-btn" data-category="menu-dzieciece">
+        Menu dziecięce
+      </button>
+      <span class="category-slash" aria-hidden="true">/</span>
+    </li>
+    <li class="category-item">
+      <button type="button" class="category-btn" data-category="ciasta-i-desery">
+        Ciasta i desery
+      </button>
+      <span class="category-slash" aria-hidden="true">/</span>
+    </li>
+    <li class="category-item">
+      <button type="button" class="category-btn" data-category="napoje-gorace">
+        Napoje gorące
+      </button>
+      <span class="category-slash" aria-hidden="true">/</span>
+    </li>
+    <li class="category-item">
+      <button type="button" class="category-btn" data-category="napoje-zimne">
+        Napoje zimne
+      </button>
+      <span class="category-slash" aria-hidden="true">/</span>
+    </li>
+    <li class="category-item">
+      <button type="button" class="category-btn" data-category="alkohole">
+        Alkohole
+      </button>
+      
+    </li>
+  </ul>
+</nav>
+
+        <!-- INFORMACJA O ALERGENACH POD KATEGORIAMI -->
+        <div class="menu-allergens-notice">
+          <p class="allergens-hint-line">Alergeny podane są w formie numerów przy poszczególnych daniach.</p>
+          <p class="allergens-hint-sub"><a href="#alergeny" class="allergens-scroll-link">Lista alergenów dostępna poniżej w dziale menu.</a></p>
+        </div>
+      </section>
+
+      <!-- PANELE KATEGORII Z POZYCJAMI -->
+      <div class="menu-panels-container">
+
+    <article class="menu-category-panel active" id="panel-przekaski" data-category="przekaski">
+      <header class="category-panel-header">
+        <h2 class="category-title">Przekąski</h2>
+        <div class="teal-divider-line"></div>
+      </header>
+
+      <div class="category-subsections">
+
+        <div class="menu-subsection">
+          <h3 class="subsection-title">Przystawki na zimno</h3>
+          <div class="menu-items-grid">
+
+            <div class="menu-item-card">
+              <div class="menu-item-header">
+                <h4 class="menu-item-name">Tatar z wołowiny</h4>
+                <div class="menu-item-dots" aria-hidden="true"></div>
+                <span class="menu-item-price">49 zł</span>
+              </div>
+              <p class="menu-item-desc">wołowina / cebula / ogórek konserwowy / grzyby marynowane</p>
+              <p class="menu-item-allergens"><span class="allergens-label">Alergeny:</span> 1, 3, 10</p>
+            </div>
+
+            <div class="menu-item-card">
+              <div class="menu-item-header">
+                <h4 class="menu-item-name">Carpaccio</h4>
+                <div class="menu-item-dots" aria-hidden="true"></div>
+                <span class="menu-item-price">45 zł</span>
+              </div>
+              <p class="menu-item-desc">wołowina/ pomidorki koktajlowe/ pesto z rukoli / parmezan/ orzeszki pini</p>
+              <p class="menu-item-allergens"><span class="allergens-label">Alergeny:</span> 1, 7, 8</p>
+            </div>
+
+          </div>
+        </div>
+
+        <div class="menu-subsection">
+          <h3 class="subsection-title">Przystawki na ciepło</h3>
+          <div class="menu-items-grid">
+
+            <div class="menu-item-card">
+              <div class="menu-item-header">
+                <h4 class="menu-item-name">Krewetki w sosie maślanym z chorizo</h4>
+                <div class="menu-item-dots" aria-hidden="true"></div>
+                <span class="menu-item-price">48 zł</span>
+              </div>
+              <p class="menu-item-desc">krewetki tygrysie / chorizo / czosnek</p>
+              <p class="menu-item-allergens"><span class="allergens-label">Alergeny:</span> 1, 2, 7</p>
+            </div>
+
+            <div class="menu-item-card">
+              <div class="menu-item-header">
+                <h4 class="menu-item-name">Mule w winie</h4>
+                <div class="menu-item-dots" aria-hidden="true"></div>
+                <span class="menu-item-price">43 zł</span>
+              </div>
+              <p class="menu-item-desc">mule / masło / wino / zioła</p>
+              <p class="menu-item-allergens"><span class="allergens-label">Alergeny:</span> 1, 7, 14</p>
+            </div>
+
+            <div class="menu-item-card">
+              <div class="menu-item-header">
+                <h4 class="menu-item-name">Mule w pomidorach</h4>
+                <div class="menu-item-dots" aria-hidden="true"></div>
+                <span class="menu-item-price">45 zł</span>
+              </div>
+              <p class="menu-item-desc">mule / pomidory / wino / zioła</p>
+              <p class="menu-item-allergens"><span class="allergens-label">Alergeny:</span> 1, 7, 14</p>
+            </div>
+
+            <div class="menu-item-card">
+              <div class="menu-item-header">
+                <h4 class="menu-item-name">Ziemniaki z gzikiem</h4>
+                <div class="menu-item-dots" aria-hidden="true"></div>
+                <span class="menu-item-price">26 zł</span>
+              </div>
+              <p class="menu-item-desc">pieczony ziemniak / twarożek / zioła</p>
+              <p class="menu-item-allergens"><span class="allergens-label">Alergeny:</span> 7</p>
+            </div>
+
+            <div class="menu-item-card">
+              <div class="menu-item-header">
+                <h4 class="menu-item-name">Przegrzebki w stylu orientalnym</h4>
+                <div class="menu-item-dots" aria-hidden="true"></div>
+                <span class="menu-item-price">44 zł</span>
+              </div>
+              <p class="menu-item-desc">przegrzebki/ rzepa/ ponzu</p>
+              
+            </div>
+
+            <div class="menu-item-card">
+              <div class="menu-item-header">
+                <h4 class="menu-item-name">Grillowana Ośmiornica</h4>
+                <div class="menu-item-dots" aria-hidden="true"></div>
+                <span class="menu-item-price">87 zł</span>
+              </div>
+              <p class="menu-item-desc">grillowana ośmiornica/ gratin ziemniaczany/ groszek</p>
+              
+            </div>
+
+          </div>
+        </div>
+
+        <div class="menu-subsection">
+          <h3 class="subsection-title">Kanapki</h3>
+          <div class="menu-items-grid">
+
+            <div class="menu-item-card">
+              <div class="menu-item-header">
+                <h4 class="menu-item-name">Bajgiel z kurczakiem</h4>
+                <div class="menu-item-dots" aria-hidden="true"></div>
+                <span class="menu-item-price">42 zł</span>
+              </div>
+              <p class="menu-item-desc">bajgiel / kurczak grillowany / bekon / sałata rzymska / sos czosnkow</p>
+              <p class="menu-item-allergens"><span class="allergens-label">Alergeny:</span> 1, 3, 7, 8</p>
+            </div>
+
+            <div class="menu-item-card">
+              <div class="menu-item-header">
+                <h4 class="menu-item-name">Bajgiel z wołowiną</h4>
+                <div class="menu-item-dots" aria-hidden="true"></div>
+                <span class="menu-item-price">52 zł</span>
+              </div>
+              <p class="menu-item-desc">wołowina / cebula karmelizowana / rukola / sos wschodni</p>
+              <p class="menu-item-allergens"><span class="allergens-label">Alergeny:</span> 1, 3, 7, 10, 11</p>
+            </div>
+
+            <div class="menu-item-card">
+              <div class="menu-item-header">
+                <h4 class="menu-item-name">Bajgiel z burattą</h4>
+                <div class="menu-item-dots" aria-hidden="true"></div>
+                <span class="menu-item-price">39 zł</span>
+              </div>
+              <p class="menu-item-desc">burrata / pomidor / zielone pesto / krem balsamiczny</p>
+              <p class="menu-item-allergens"><span class="allergens-label">Alergeny:</span> 1, 8</p>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+    </article>
+
+    <article class="menu-category-panel" id="panel-dania-glowne" data-category="dania-glowne">
+      <header class="category-panel-header">
+        <h2 class="category-title">Dania główne</h2>
+        <div class="teal-divider-line"></div>
+      </header>
+
+      <div class="category-subsections">
+
+        <div class="menu-subsection">
+          <h3 class="subsection-title">Dania główne | MIĘSO</h3>
+          <div class="menu-items-grid">
+
+            <div class="menu-item-card">
+              <div class="menu-item-header">
+                <h4 class="menu-item-name">Pyza z kaczką</h4>
+                <div class="menu-item-dots" aria-hidden="true"></div>
+                <span class="menu-item-price">62 zł</span>
+              </div>
+              <p class="menu-item-desc">pieczone szarpane udo z kaczki/ modra kapusta/ pyza</p>
+              <p class="menu-item-allergens"><span class="allergens-label">Alergeny:</span> 1, 2, 3, 6, 7</p>
+            </div>
+
+            <div class="menu-item-card">
+              <div class="menu-item-header">
+                <h4 class="menu-item-name">Wołowina długo duszona z sake</h4>
+                <div class="menu-item-dots" aria-hidden="true"></div>
+                <span class="menu-item-price">68 zł</span>
+              </div>
+              <p class="menu-item-desc">wołowina / puree ziemniaczane / buraki / sake</p>
+              <p class="menu-item-allergens"><span class="allergens-label">Alergeny:</span> 1, 7, 9, 10</p>
+            </div>
+
+            <div class="menu-item-card">
+              <div class="menu-item-header">
+                <h4 class="menu-item-name">Żeberka BBQ</h4>
+                <div class="menu-item-dots" aria-hidden="true"></div>
+                <span class="menu-item-price">76 zł</span>
+              </div>
+              <p class="menu-item-desc">żeberka / frytki lub ziemniak pieczony z gzikiem / colesław</p>
+              <p class="menu-item-allergens"><span class="allergens-label">Alergeny:</span> 7, 10, 11</p>
+            </div>
+
+            <div class="menu-item-card">
+              <div class="menu-item-header">
+                <h4 class="menu-item-name">Duszony królik</h4>
+                <div class="menu-item-dots" aria-hidden="true"></div>
+                <span class="menu-item-price">69 zł</span>
+              </div>
+              <p class="menu-item-desc">udko z królika / puree z białych korzeni / brukselka / marchewka / sos malinowo- śliwkowy</p>
+              <p class="menu-item-allergens"><span class="allergens-label">Alergeny:</span> 7, 9</p>
+            </div>
+
+            <div class="menu-item-card">
+              <div class="menu-item-header">
+                <h4 class="menu-item-name">Kurczak supreme</h4>
+                <div class="menu-item-dots" aria-hidden="true"></div>
+                <span class="menu-item-price">69 zł</span>
+              </div>
+              <p class="menu-item-desc">kurczak /puree ziemniaczane / cytrusy / dziki brokuł / marchewka</p>
+              <p class="menu-item-allergens"><span class="allergens-label">Alergeny:</span> 7, 10</p>
+            </div>
+
+            <div class="menu-item-card">
+              <div class="menu-item-header">
+                <h4 class="menu-item-name">Polędwiczka wieprzowa</h4>
+                <div class="menu-item-dots" aria-hidden="true"></div>
+                <span class="menu-item-price">66 zł</span>
+              </div>
+              <p class="menu-item-desc">polędwiczka wieprzowa / szynka szwarcwaldzka /  puree ziemniaczane /grzyby shimeji / warzywa sezonowe-  1, 7, 10
+</p>
+              
+            </div>
+
+            <div class="menu-item-card">
+              <div class="menu-item-header">
+                <h4 class="menu-item-name">Stek z polędwicy wołowej</h4>
+                <div class="menu-item-dots" aria-hidden="true"></div>
+                <span class="menu-item-price">125 zł</span>
+              </div>
+              <p class="menu-item-desc">polędwica wołowa 200g / frytki lub ziemniak pieczony / mix sałat / sos z zielonego pieprzu</p>
+              <p class="menu-item-allergens"><span class="allergens-label">Alergeny:</span> 7, 10</p>
+            </div>
+
+            <div class="menu-item-card">
+              <div class="menu-item-header">
+                <h4 class="menu-item-name">Stek z antrykotu dojrzewającego (Argentyna)</h4>
+                <div class="menu-item-dots" aria-hidden="true"></div>
+                <span class="menu-item-price">135 zł</span>
+              </div>
+              <p class="menu-item-desc">polędwica wołowa 250g / frytki lub ziemniak pieczony / mix sałat</p>
+              <p class="menu-item-allergens"><span class="allergens-label">Alergeny:</span> 1, 3, 7</p>
+            </div>
+
+            <div class="menu-item-card">
+              <div class="menu-item-header">
+                <h4 class="menu-item-name">Gołąbki z kaszą pęczak</h4>
+                <div class="menu-item-dots" aria-hidden="true"></div>
+                <span class="menu-item-price">59 zł</span>
+              </div>
+              <p class="menu-item-desc">kasza pęczak / kapusta włoska / ser lazur / pieczarki/ pomidory pelati</p>
+              <p class="menu-item-allergens"><span class="allergens-label">Alergeny:</span> 1, 7, 9</p>
+            </div>
+
+          </div>
+        </div>
+
+        <div class="menu-subsection">
+          <h3 class="subsection-title">Dania główne | RYBY</h3>
+          <div class="menu-items-grid">
+
+            <div class="menu-item-card">
+              <div class="menu-item-header">
+                <h4 class="menu-item-name">Zapiekany halibut</h4>
+                <div class="menu-item-dots" aria-hidden="true"></div>
+                <span class="menu-item-price">69 zł</span>
+              </div>
+              <p class="menu-item-desc">halibut / puree z białych korzeni / awokado / pomidory suszone / kopytka z batatów / dziki brokuł</p>
+              <p class="menu-item-allergens"><span class="allergens-label">Alergeny:</span> 1, 3, 4, 7, 9</p>
+            </div>
+
+            <div class="menu-item-card">
+              <div class="menu-item-header">
+                <h4 class="menu-item-name">Pieczona dorada</h4>
+                <div class="menu-item-dots" aria-hidden="true"></div>
+                <span class="menu-item-price">69 zł</span>
+              </div>
+              <p class="menu-item-desc">dorada / pieczone ziemniaki / pieczone warzywa / zioła</p>
+              <p class="menu-item-allergens"><span class="allergens-label">Alergeny:</span> 4, 9, 10</p>
+            </div>
+
+            <div class="menu-item-card">
+              <div class="menu-item-header">
+                <h4 class="menu-item-name">Fish and chips</h4>
+                <div class="menu-item-dots" aria-hidden="true"></div>
+                <span class="menu-item-price">59 zł</span>
+              </div>
+              <p class="menu-item-desc">morszczuk / frytki domowe / colesław / sos tatarski - 1, 3, 4, 10</p>
+              
+            </div>
+
+            <div class="menu-item-card">
+              <div class="menu-item-header">
+                <h4 class="menu-item-name">Pieczony łosoś</h4>
+                <div class="menu-item-dots" aria-hidden="true"></div>
+                <span class="menu-item-price">69 zł</span>
+              </div>
+              <p class="menu-item-desc">łosoś / gnocchi / pieczone pomidorki / szpinak / parmezan</p>
+              <p class="menu-item-allergens"><span class="allergens-label">Alergeny:</span> 1, 3, 4, 7</p>
+            </div>
+
+            <div class="menu-item-card">
+              <div class="menu-item-header">
+                <h4 class="menu-item-name">Pieczony sandacz</h4>
+                <div class="menu-item-dots" aria-hidden="true"></div>
+                <span class="menu-item-price">69 zł</span>
+              </div>
+              <p class="menu-item-desc">sandacz / risotto / fasolka szparagowa</p>
+              <p class="menu-item-allergens"><span class="allergens-label">Alergeny:</span> 3, 4, 7</p>
+            </div>
+
+          </div>
+        </div>
+
+        <div class="menu-subsection">
+          <h3 class="subsection-title">Makarony i ryże</h3>
+          <div class="menu-items-grid">
+
+            <div class="menu-item-card">
+              <div class="menu-item-header">
+                <h4 class="menu-item-name">Czarne tagliatelle Fruti di mare </h4>
+                <div class="menu-item-dots" aria-hidden="true"></div>
+                <span class="menu-item-price">49 zł</span>
+              </div>
+              <p class="menu-item-desc">makaron tagliatelle / mule / krewetka / vongole / cukinia
+</p>
+              
+            </div>
+
+            <div class="menu-item-card">
+              <div class="menu-item-header">
+                <h4 class="menu-item-name">Pappardelle z grzybami </h4>
+                <div class="menu-item-dots" aria-hidden="true"></div>
+                <span class="menu-item-price">47 zł</span>
+              </div>
+              <p class="menu-item-desc">makaron pappardelle / kurczak / grzyby / śmietana / parmezan- 1, 3, 7</p>
+              
+            </div>
+
+            <div class="menu-item-card">
+              <div class="menu-item-header">
+                <h4 class="menu-item-name">Risotto z kurczakiem</h4>
+                <div class="menu-item-dots" aria-hidden="true"></div>
+                <span class="menu-item-price">47 zł</span>
+              </div>
+              <p class="menu-item-desc">ryż arborio/ fasolka szparagowa / cytrusy / masło</p>
+              <p class="menu-item-allergens"><span class="allergens-label">Alergeny:</span> 7</p>
+            </div>
+
+            <div class="menu-item-card">
+              <div class="menu-item-header">
+                <h4 class="menu-item-name">Strozzapreti z łososiem</h4>
+                <div class="menu-item-dots" aria-hidden="true"></div>
+                <span class="menu-item-price">49 zł</span>
+              </div>
+              <p class="menu-item-desc">makaron strozzapreti / łosoś /zielone pesto / czosnek niedźwiedzi</p>
+              <p class="menu-item-allergens"><span class="allergens-label">Alergeny:</span> 1, 8</p>
+            </div>
+
+            <div class="menu-item-card">
+              <div class="menu-item-header">
+                <h4 class="menu-item-name">Spaghetti Carbonara</h4>
+                <div class="menu-item-dots" aria-hidden="true"></div>
+                <span class="menu-item-price">47 zł</span>
+              </div>
+              <p class="menu-item-desc">makaron spaghetti/ guanciale/ jajko/ parmezan</p>
+              <p class="menu-item-allergens"><span class="allergens-label">Alergeny:</span> 1, 3, 7</p>
+            </div>
+
+            <div class="menu-item-card">
+              <div class="menu-item-header">
+                <h4 class="menu-item-name">Makaron orientalny</h4>
+                <div class="menu-item-dots" aria-hidden="true"></div>
+                <span class="menu-item-price">48 zł</span>
+              </div>
+              <p class="menu-item-desc">makaron spaghetti / kurczak / ponzu / teriyaki / masło orzechowe / warzywa sezonowe / sezam</p>
+              <p class="menu-item-allergens"><span class="allergens-label">Alergeny:</span> 1, 3, 5, 6, 9, 11</p>
+            </div>
+
+            <div class="menu-item-card">
+              <div class="menu-item-header">
+                <h4 class="menu-item-name">Papardelle Aura</h4>
+                <div class="menu-item-dots" aria-hidden="true"></div>
+                <span class="menu-item-price">46 zł</span>
+              </div>
+              <p class="menu-item-desc">makaron papardelle / pieczone pomidory / buratta / zielony parmezan-  1,3,7,</p>
+              
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+    </article>
+
+    <article class="menu-category-panel" id="panel-zupy" data-category="zupy">
+      <header class="category-panel-header">
+        <h2 class="category-title">Zupy</h2>
+        <div class="teal-divider-line"></div>
+      </header>
+
+      <div class="category-subsections">
+
+        <div class="menu-subsection">
+          
+          <div class="menu-items-grid">
+
+            <div class="menu-item-card">
+              <div class="menu-item-header">
+                <h4 class="menu-item-name">Krem z pomidorów</h4>
+                <div class="menu-item-dots" aria-hidden="true"></div>
+                <span class="menu-item-price">24 zł</span>
+              </div>
+              <p class="menu-item-desc">pomidory / parmezan / śmietana / bazylia</p>
+              <p class="menu-item-allergens"><span class="allergens-label">Alergeny:</span> 1, 3, 7</p>
+            </div>
+
+            <div class="menu-item-card">
+              <div class="menu-item-header">
+                <h4 class="menu-item-name">Krem z ziemniaków i pieczonego czosnku</h4>
+                <div class="menu-item-dots" aria-hidden="true"></div>
+                <span class="menu-item-price">23 zł</span>
+              </div>
+              <p class="menu-item-desc">pieczone ziemniaki / czosnek / śmietana / bekon / grzanki</p>
+              <p class="menu-item-allergens"><span class="allergens-label">Alergeny:</span> 1, 3, 7</p>
+            </div>
+
+            <div class="menu-item-card">
+              <div class="menu-item-header">
+                <h4 class="menu-item-name">Zupa rybna</h4>
+                <div class="menu-item-dots" aria-hidden="true"></div>
+                <span class="menu-item-price">33 zł</span>
+              </div>
+              <p class="menu-item-desc">ryba / krewetki / mule</p>
+              <p class="menu-item-allergens"><span class="allergens-label">Alergeny:</span> 1, 2, 4, 9, 14</p>
+            </div>
+
+            <div class="menu-item-card">
+              <div class="menu-item-header">
+                <h4 class="menu-item-name">Rosół</h4>
+                <div class="menu-item-dots" aria-hidden="true"></div>
+                <span class="menu-item-price">20 zł</span>
+              </div>
+              <p class="menu-item-desc">1, 3, 9</p>
+              
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+    </article>
+
+    <article class="menu-category-panel" id="panel-salaty" data-category="salaty">
+      <header class="category-panel-header">
+        <h2 class="category-title">Sałaty</h2>
+        <div class="teal-divider-line"></div>
+      </header>
+
+      <div class="category-subsections">
+
+        <div class="menu-subsection">
+          <h3 class="subsection-title">Sałatki</h3>
+          <div class="menu-items-grid">
+
+            <div class="menu-item-card">
+              <div class="menu-item-header">
+                <h4 class="menu-item-name">Sałatka z buraka</h4>
+                <div class="menu-item-dots" aria-hidden="true"></div>
+                <span class="menu-item-price">39 zł</span>
+              </div>
+              <p class="menu-item-desc">burak / gruszka / rukola / ser feta / autorski sos balsamiczny / możliwość zamówienia sera wege</p>
+              <p class="menu-item-allergens"><span class="allergens-label">Alergeny:</span> 1, 6, 7, 8, 10</p>
+            </div>
+
+            <div class="menu-item-card">
+              <div class="menu-item-header">
+                <h4 class="menu-item-name">Sałatka cezar</h4>
+                <div class="menu-item-dots" aria-hidden="true"></div>
+                <span class="menu-item-price">48 zł</span>
+              </div>
+              <p class="menu-item-desc">sałata rzymska / kurczak / sos cezar / grzanki / parmezan</p>
+              <p class="menu-item-allergens"><span class="allergens-label">Alergeny:</span> 1, 3, 7, 10</p>
+            </div>
+
+            <div class="menu-item-card">
+              <div class="menu-item-header">
+                <h4 class="menu-item-name">Sałatka z łososiem</h4>
+                <div class="menu-item-dots" aria-hidden="true"></div>
+                <span class="menu-item-price">49 zł</span>
+              </div>
+              <p class="menu-item-desc">łosoś / sałata / pomidorki / cytrusy / migdały / kapary / winegret</p>
+              <p class="menu-item-allergens"><span class="allergens-label">Alergeny:</span> 1, 4, 8, 10</p>
+            </div>
+
+            <div class="menu-item-card">
+              <div class="menu-item-header">
+                <h4 class="menu-item-name">Sałatka Aura</h4>
+                <div class="menu-item-dots" aria-hidden="true"></div>
+                <span class="menu-item-price">47 zł</span>
+              </div>
+              <p class="menu-item-desc">kurczak / mix sałat / warzywa sezonowe / ser lazur</p>
+              <p class="menu-item-allergens"><span class="allergens-label">Alergeny:</span> 1, 7, 10</p>
+            </div>
+
+            <div class="menu-item-card">
+              <div class="menu-item-header">
+                <h4 class="menu-item-name">Sałatka z krewetkami</h4>
+                <div class="menu-item-dots" aria-hidden="true"></div>
+                <span class="menu-item-price">49 zł</span>
+              </div>
+              <p class="menu-item-desc">krewetki/ mix sałat/ cukinia grillowana/ pomidorki koktajlowe/ limonka/ winegret</p>
+              <p class="menu-item-allergens"><span class="allergens-label">Alergeny:</span> 1, 2, 8, 10</p>
+            </div>
+
+            <div class="menu-item-card">
+              <div class="menu-item-header">
+                <h4 class="menu-item-name">Sałatka z wołowiną</h4>
+                <div class="menu-item-dots" aria-hidden="true"></div>
+                <span class="menu-item-price">54 zł</span>
+              </div>
+              <p class="menu-item-desc">wołowina / rukola / ogórki tłuczone / chilli / sos sojowy / sezam</p>
+              <p class="menu-item-allergens"><span class="allergens-label">Alergeny:</span> 1,5,6,11</p>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+    </article>
+
+    <article class="menu-category-panel" id="panel-burgery" data-category="burgery">
+      <header class="category-panel-header">
+        <h2 class="category-title">Burgery</h2>
+        <div class="teal-divider-line"></div>
+      </header>
+
+      <div class="category-subsections">
+
+        <div class="menu-subsection">
+          
+          <div class="menu-items-grid">
+
+            <div class="menu-item-card">
+              <div class="menu-item-header">
+                <h4 class="menu-item-name">Burger Aura</h4>
+                <div class="menu-item-dots" aria-hidden="true"></div>
+                <span class="menu-item-price">49 zł</span>
+              </div>
+              <p class="menu-item-desc">200g wołowiny / bekon / cheddar / warzywa / masło arachidowe / sos pikantny</p>
+              <p class="menu-item-allergens"><span class="allergens-label">Alergeny:</span> 1, 3, 5, 7, 10</p>
+            </div>
+
+            <div class="menu-item-card">
+              <div class="menu-item-header">
+                <h4 class="menu-item-name">Burger klasyczny</h4>
+                <div class="menu-item-dots" aria-hidden="true"></div>
+                <span class="menu-item-price">49 zł</span>
+              </div>
+              <p class="menu-item-desc">200g wołowiny / bekon / cheddar / warzywa / sos pikantny / sos barbecue</p>
+              <p class="menu-item-allergens"><span class="allergens-label">Alergeny:</span> 1, 3, 7, 10</p>
+            </div>
+
+            <div class="menu-item-card">
+              <div class="menu-item-header">
+                <h4 class="menu-item-name">Smashburger</h4>
+                <div class="menu-item-dots" aria-hidden="true"></div>
+                <span class="menu-item-price">49 zł</span>
+              </div>
+              <p class="menu-item-desc">200g wołowiny / podwójny cheddar / cebula / autorski sos</p>
+              <p class="menu-item-allergens"><span class="allergens-label">Alergeny:</span> 1, 3, 7, 10</p>
+            </div>
+
+            <div class="menu-item-card">
+              <div class="menu-item-header">
+                <h4 class="menu-item-name">Burger vege</h4>
+                <div class="menu-item-dots" aria-hidden="true"></div>
+                <span class="menu-item-price">45 zł</span>
+              </div>
+              <p class="menu-item-desc">burger buraczany/ warzywa/ sos autorski (wegetariański)</p>
+              <p class="menu-item-allergens"><span class="allergens-label">Alergeny:</span> 1, 3, 6, 7, 9, 10</p>
+            </div>
+
+            <div class="menu-item-card">
+              <div class="menu-item-header">
+                <h4 class="menu-item-name">Burger z szarpaną wołowiną</h4>
+                <div class="menu-item-dots" aria-hidden="true"></div>
+                <span class="menu-item-price">52 zł</span>
+              </div>
+              <p class="menu-item-desc">szarpana wołowina / kapusta piklowana/ kiszony ogórek / sos barbecue
+</p>
+              
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+    </article>
+
+    <article class="menu-category-panel" id="panel-menu-dzieciece" data-category="menu-dzieciece">
+      <header class="category-panel-header">
+        <h2 class="category-title">Menu dziecięce</h2>
+        <div class="teal-divider-line"></div>
+      </header>
+
+      <div class="category-subsections">
+
+        <div class="menu-subsection">
+          
+          <div class="menu-items-grid">
+
+            <div class="menu-item-card">
+              <div class="menu-item-header">
+                <h4 class="menu-item-name">Fish and chips </h4>
+                <div class="menu-item-dots" aria-hidden="true"></div>
+                <span class="menu-item-price">33 zł</span>
+              </div>
+              <p class="menu-item-desc">morszczuk / frytki domowe / coleslaw / sos tatarski</p>
+              <p class="menu-item-allergens"><span class="allergens-label">Alergeny:</span> 1, 3, 4, 10</p>
+            </div>
+
+            <div class="menu-item-card">
+              <div class="menu-item-header">
+                <h4 class="menu-item-name">Nuggets z frytkami</h4>
+                <div class="menu-item-dots" aria-hidden="true"></div>
+                <span class="menu-item-price">29 zł</span>
+              </div>
+              <p class="menu-item-desc">kawałki kurczaka / frytki domowe</p>
+              <p class="menu-item-allergens"><span class="allergens-label">Alergeny:</span> 1, 3</p>
+            </div>
+
+            <div class="menu-item-card">
+              <div class="menu-item-header">
+                <h4 class="menu-item-name">Rosół</h4>
+                <div class="menu-item-dots" aria-hidden="true"></div>
+                <span class="menu-item-price">19 zł</span>
+              </div>
+              <p class="menu-item-desc">1, 3, 9</p>
+              
+            </div>
+
+            <div class="menu-item-card">
+              <div class="menu-item-header">
+                <h4 class="menu-item-name"> Pancake z owocami </h4>
+                <div class="menu-item-dots" aria-hidden="true"></div>
+                <span class="menu-item-price">29 zł</span>
+              </div>
+              <p class="menu-item-desc">pancake / owoce / syrop klonowy - 1,3,7</p>
+              
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+    </article>
+
+    <article class="menu-category-panel" id="panel-ciasta-i-desery" data-category="ciasta-i-desery">
+      <header class="category-panel-header">
+        <h2 class="category-title">Ciasta i desery</h2>
+        <div class="teal-divider-line"></div>
+      </header>
+
+      <div class="category-subsections">
+
+        <div class="menu-subsection">
+          
+          <div class="menu-items-grid">
+
+            <div class="menu-item-card">
+              <div class="menu-item-header">
+                <h4 class="menu-item-name">Sernik baskijski</h4>
+                <div class="menu-item-dots" aria-hidden="true"></div>
+                <span class="menu-item-price">25 zł</span>
+              </div>
+              <p class="menu-item-desc">ciastka owsiane digestives / ser śmietankowy / jogurt grecki</p>
+              <p class="menu-item-allergens"><span class="allergens-label">Alergeny:</span> 1, 3, 7, 11</p>
+            </div>
+
+            <div class="menu-item-card">
+              <div class="menu-item-header">
+                <h4 class="menu-item-name">Tort lodowy z truskawkami / ajerkoniakiem / malinami</h4>
+                <div class="menu-item-dots" aria-hidden="true"></div>
+                <span class="menu-item-price">24 zł</span>
+              </div>
+              
+              
+            </div>
+
+            <div class="menu-item-card">
+              <div class="menu-item-header">
+                <h4 class="menu-item-name">Tiramisu </h4>
+                <div class="menu-item-dots" aria-hidden="true"></div>
+                <span class="menu-item-price">25 zł</span>
+              </div>
+              <p class="menu-item-desc">biszkopt / żółtko / mascarpone/ kakao
+- 1,3,7</p>
+              
+            </div>
+
+            <div class="menu-item-card">
+              <div class="menu-item-header">
+                <h4 class="menu-item-name">Deser lodowy</h4>
+                <div class="menu-item-dots" aria-hidden="true"></div>
+                <span class="menu-item-price">24 zł</span>
+              </div>
+              <p class="menu-item-desc">lody waniliowe / owoce sezonowe glazurowane / kruszonka</p>
+              <p class="menu-item-allergens"><span class="allergens-label">Alergeny:</span> 1, 3, 7</p>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+    </article>
+
+    <article class="menu-category-panel" id="panel-napoje-gorace" data-category="napoje-gorace">
+      <header class="category-panel-header">
+        <h2 class="category-title">Napoje gorące</h2>
+        <div class="teal-divider-line"></div>
+      </header>
+
+      <div class="category-subsections">
+
+        <div class="menu-subsection">
+          <h3 class="subsection-title">Napoje gorące | Kawy</h3>
+          <div class="menu-items-grid">
+
+            <div class="menu-item-card">
+              <div class="menu-item-header">
+                <h4 class="menu-item-name">Espresso</h4>
+                <div class="menu-item-dots" aria-hidden="true"></div>
+                <span class="menu-item-price">10 zł</span>
+              </div>
+              
+              
+            </div>
+
+            <div class="menu-item-card">
+              <div class="menu-item-header">
+                <h4 class="menu-item-name">Doppio</h4>
+                <div class="menu-item-dots" aria-hidden="true"></div>
+                <span class="menu-item-price">14 zł</span>
+              </div>
+              
+              
+            </div>
+
+            <div class="menu-item-card">
+              <div class="menu-item-header">
+                <h4 class="menu-item-name">Cappuccino</h4>
+                <div class="menu-item-dots" aria-hidden="true"></div>
+                <span class="menu-item-price">15 zł</span>
+              </div>
+              
+              
+            </div>
+
+            <div class="menu-item-card">
+              <div class="menu-item-header">
+                <h4 class="menu-item-name">Latte</h4>
+                <div class="menu-item-dots" aria-hidden="true"></div>
+                <span class="menu-item-price">15 zł</span>
+              </div>
+              
+              
+            </div>
+
+            <div class="menu-item-card">
+              <div class="menu-item-header">
+                <h4 class="menu-item-name">Kawa biała</h4>
+                <div class="menu-item-dots" aria-hidden="true"></div>
+                <span class="menu-item-price">12 zł</span>
+              </div>
+              
+              
+            </div>
+
+            <div class="menu-item-card">
+              <div class="menu-item-header">
+                <h4 class="menu-item-name">Kawa biała duża</h4>
+                <div class="menu-item-dots" aria-hidden="true"></div>
+                <span class="menu-item-price">15 zł</span>
+              </div>
+              
+              
+            </div>
+
+            <div class="menu-item-card">
+              <div class="menu-item-header">
+                <h4 class="menu-item-name">Kawa czarna</h4>
+                <div class="menu-item-dots" aria-hidden="true"></div>
+                <span class="menu-item-price">11 zł</span>
+              </div>
+              
+              
+            </div>
+
+            <div class="menu-item-card">
+              <div class="menu-item-header">
+                <h4 class="menu-item-name">Kawa czarna duża</h4>
+                <div class="menu-item-dots" aria-hidden="true"></div>
+                <span class="menu-item-price">15 zł</span>
+              </div>
+              
+              
+            </div>
+
+          </div>
+        </div>
+
+        <div class="menu-subsection">
+          <h3 class="subsection-title">Napoje | Herbaty Hot / Herbaty Ice</h3>
+          <div class="menu-items-grid">
+
+            <div class="menu-item-card">
+              <div class="menu-item-header">
+                <h4 class="menu-item-name">Herbata Honey Raspberry Pear</h4>
+                <div class="menu-item-dots" aria-hidden="true"></div>
+                <span class="menu-item-price">19 zł</span>
+              </div>
+              
+              
+            </div>
+
+            <div class="menu-item-card">
+              <div class="menu-item-header">
+                <h4 class="menu-item-name">Herbata Orange Spicy Cinnamon</h4>
+                <div class="menu-item-dots" aria-hidden="true"></div>
+                <span class="menu-item-price">19 zł</span>
+              </div>
+              
+              
+            </div>
+
+            <div class="menu-item-card">
+              <div class="menu-item-header">
+                <h4 class="menu-item-name">Herbata Lemon Ginger Paradise</h4>
+                <div class="menu-item-dots" aria-hidden="true"></div>
+                <span class="menu-item-price">19 zł</span>
+              </div>
+              
+              
+            </div>
+
+            <div class="menu-item-card">
+              <div class="menu-item-header">
+                <h4 class="menu-item-name">Herbata Mango Maui</h4>
+                <div class="menu-item-dots" aria-hidden="true"></div>
+                <span class="menu-item-price">19 zł</span>
+              </div>
+              
+              
+            </div>
+
+            <div class="menu-item-card">
+              <div class="menu-item-header">
+                <h4 class="menu-item-name">Herbata Peach Lemon Star</h4>
+                <div class="menu-item-dots" aria-hidden="true"></div>
+                <span class="menu-item-price">19 zł</span>
+              </div>
+              
+              
+            </div>
+
+            <div class="menu-item-card">
+              <div class="menu-item-header">
+                <h4 class="menu-item-name">Herbata Melon Mint</h4>
+                <div class="menu-item-dots" aria-hidden="true"></div>
+                <span class="menu-item-price">19 zł</span>
+              </div>
+              
+              
+            </div>
+
+            <div class="menu-item-card">
+              <div class="menu-item-header">
+                <h4 class="menu-item-name">Herbata Mojito Green Mint</h4>
+                <div class="menu-item-dots" aria-hidden="true"></div>
+                <span class="menu-item-price">19 zł</span>
+              </div>
+              
+              
+            </div>
+
+          </div>
+        </div>
+
+        <div class="menu-subsection">
+          <h3 class="subsection-title">Napoje gorące | Herbaty czarne</h3>
+          <div class="menu-items-grid">
+
+            <div class="menu-item-card">
+              <div class="menu-item-header">
+                <h4 class="menu-item-name">Herbata Ceylon Gold</h4>
+                <div class="menu-item-dots" aria-hidden="true"></div>
+                <span class="menu-item-price">15 zł</span>
+              </div>
+              
+              
+            </div>
+
+            <div class="menu-item-card">
+              <div class="menu-item-header">
+                <h4 class="menu-item-name">Herbata Assam</h4>
+                <div class="menu-item-dots" aria-hidden="true"></div>
+                <span class="menu-item-price">15 zł</span>
+              </div>
+              
+              
+            </div>
+
+            <div class="menu-item-card">
+              <div class="menu-item-header">
+                <h4 class="menu-item-name">Herbata Earl Grey</h4>
+                <div class="menu-item-dots" aria-hidden="true"></div>
+                <span class="menu-item-price">15 zł</span>
+              </div>
+              
+              
+            </div>
+
+            <div class="menu-item-card">
+              <div class="menu-item-header">
+                <h4 class="menu-item-name">Herbata Darjeeling</h4>
+                <div class="menu-item-dots" aria-hidden="true"></div>
+                <span class="menu-item-price">15 zł</span>
+              </div>
+              
+              
+            </div>
+
+            <div class="menu-item-card">
+              <div class="menu-item-header">
+                <h4 class="menu-item-name">Herbata Black Chili Chocolate</h4>
+                <div class="menu-item-dots" aria-hidden="true"></div>
+                <span class="menu-item-price">15 zł</span>
+              </div>
+              
+              
+            </div>
+
+          </div>
+        </div>
+
+        <div class="menu-subsection">
+          <h3 class="subsection-title">Napoje gorące | Herbaty zielone i białe</h3>
+          <div class="menu-items-grid">
+
+            <div class="menu-item-card">
+              <div class="menu-item-header">
+                <h4 class="menu-item-name">Herbata Gunpowder Green</h4>
+                <div class="menu-item-dots" aria-hidden="true"></div>
+                <span class="menu-item-price">15 zł</span>
+              </div>
+              
+              
+            </div>
+
+            <div class="menu-item-card">
+              <div class="menu-item-header">
+                <h4 class="menu-item-name">Herbata Green Jasmine</h4>
+                <div class="menu-item-dots" aria-hidden="true"></div>
+                <span class="menu-item-price">15 zł</span>
+              </div>
+              
+              
+            </div>
+
+            <div class="menu-item-card">
+              <div class="menu-item-header">
+                <h4 class="menu-item-name">Herbata Peppermint Green</h4>
+                <div class="menu-item-dots" aria-hidden="true"></div>
+                <span class="menu-item-price">15 zł</span>
+              </div>
+              
+              
+            </div>
+
+            <div class="menu-item-card">
+              <div class="menu-item-header">
+                <h4 class="menu-item-name">Herbata Green Cherry</h4>
+                <div class="menu-item-dots" aria-hidden="true"></div>
+                <span class="menu-item-price">15 zł</span>
+              </div>
+              
+              
+            </div>
+
+            <div class="menu-item-card">
+              <div class="menu-item-header">
+                <h4 class="menu-item-name">Herbata Green Roasted Rice</h4>
+                <div class="menu-item-dots" aria-hidden="true"></div>
+                <span class="menu-item-price">15 zł</span>
+              </div>
+              
+              
+            </div>
+
+            <div class="menu-item-card">
+              <div class="menu-item-header">
+                <h4 class="menu-item-name">Herbata White Pearl of Fujian</h4>
+                <div class="menu-item-dots" aria-hidden="true"></div>
+                <span class="menu-item-price">15 zł</span>
+              </div>
+              
+              
+            </div>
+
+          </div>
+        </div>
+
+        <div class="menu-subsection">
+          <h3 class="subsection-title">Napoje gorące | Herbaty smakowe</h3>
+          <div class="menu-items-grid">
+
+            <div class="menu-item-card">
+              <div class="menu-item-header">
+                <h4 class="menu-item-name">Herbata Forest Fruits</h4>
+                <div class="menu-item-dots" aria-hidden="true"></div>
+                <span class="menu-item-price">15 zł</span>
+              </div>
+              
+              
+            </div>
+
+            <div class="menu-item-card">
+              <div class="menu-item-header">
+                <h4 class="menu-item-name">Herbata Mexican Dream</h4>
+                <div class="menu-item-dots" aria-hidden="true"></div>
+                <span class="menu-item-price">15 zł</span>
+              </div>
+              
+              
+            </div>
+
+            <div class="menu-item-card">
+              <div class="menu-item-header">
+                <h4 class="menu-item-name">Herbata Peach Lemon Star</h4>
+                <div class="menu-item-dots" aria-hidden="true"></div>
+                <span class="menu-item-price">15 zł</span>
+              </div>
+              
+              
+            </div>
+
+            <div class="menu-item-card">
+              <div class="menu-item-header">
+                <h4 class="menu-item-name">Herbata Raspberry Pear</h4>
+                <div class="menu-item-dots" aria-hidden="true"></div>
+                <span class="menu-item-price">15 zł</span>
+              </div>
+              
+              
+            </div>
+
+            <div class="menu-item-card">
+              <div class="menu-item-header">
+                <h4 class="menu-item-name">Herbata Mango Maui</h4>
+                <div class="menu-item-dots" aria-hidden="true"></div>
+                <span class="menu-item-price">15 zł</span>
+              </div>
+              
+              
+            </div>
+
+            <div class="menu-item-card">
+              <div class="menu-item-header">
+                <h4 class="menu-item-name">Herbata Melon Mint</h4>
+                <div class="menu-item-dots" aria-hidden="true"></div>
+                <span class="menu-item-price">15 zł</span>
+              </div>
+              
+              
+            </div>
+
+            <div class="menu-item-card">
+              <div class="menu-item-header">
+                <h4 class="menu-item-name">Herbata Spicy Cinnamon</h4>
+                <div class="menu-item-dots" aria-hidden="true"></div>
+                <span class="menu-item-price">15 zł</span>
+              </div>
+              
+              
+            </div>
+
+            <div class="menu-item-card">
+              <div class="menu-item-header">
+                <h4 class="menu-item-name">Herbata Ginger Paradise</h4>
+                <div class="menu-item-dots" aria-hidden="true"></div>
+                <span class="menu-item-price">15 zł</span>
+              </div>
+              
+              
+            </div>
+
+            <div class="menu-item-card">
+              <div class="menu-item-header">
+                <h4 class="menu-item-name">Herbata Rooibos Sunrise</h4>
+                <div class="menu-item-dots" aria-hidden="true"></div>
+                <span class="menu-item-price">15 zł</span>
+              </div>
+              
+              
+            </div>
+
+            <div class="menu-item-card">
+              <div class="menu-item-header">
+                <h4 class="menu-item-name">Herbata Dream Melissa</h4>
+                <div class="menu-item-dots" aria-hidden="true"></div>
+                <span class="menu-item-price">15 zł</span>
+              </div>
+              
+              
+            </div>
+
+            <div class="menu-item-card">
+              <div class="menu-item-header">
+                <h4 class="menu-item-name">Herbata Pu-erh Strawberry</h4>
+                <div class="menu-item-dots" aria-hidden="true"></div>
+                <span class="menu-item-price">15 zł</span>
+              </div>
+              
+              
+            </div>
+
+            <div class="menu-item-card">
+              <div class="menu-item-header">
+                <h4 class="menu-item-name">Herbata Yerba Mate Lemon</h4>
+                <div class="menu-item-dots" aria-hidden="true"></div>
+                <span class="menu-item-price">15 zł</span>
+              </div>
+              
+              
+            </div>
+
+            <div class="menu-item-card">
+              <div class="menu-item-header">
+                <h4 class="menu-item-name">Herbata Pure Camomile</h4>
+                <div class="menu-item-dots" aria-hidden="true"></div>
+                <span class="menu-item-price">15 zł</span>
+              </div>
+              
+              
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+    </article>
+
+    <article class="menu-category-panel" id="panel-napoje-zimne" data-category="napoje-zimne">
+      <header class="category-panel-header">
+        <h2 class="category-title">Napoje zimne</h2>
+        <div class="teal-divider-line"></div>
+      </header>
+
+      <div class="category-subsections">
+
+        <div class="menu-subsection">
+          <h3 class="subsection-title">Napoje | Kawy mrożone</h3>
+          <div class="menu-items-grid">
+
+            <div class="menu-item-card">
+              <div class="menu-item-header">
+                <h4 class="menu-item-name">Mrożona americano</h4>
+                <div class="menu-item-dots" aria-hidden="true"></div>
+                <span class="menu-item-price">16 zł</span>
+              </div>
+              
+              
+            </div>
+
+            <div class="menu-item-card">
+              <div class="menu-item-header">
+                <h4 class="menu-item-name">Mrożona latte</h4>
+                <div class="menu-item-dots" aria-hidden="true"></div>
+                <span class="menu-item-price">18 zł</span>
+              </div>
+              
+              
+            </div>
+
+            <div class="menu-item-card">
+              <div class="menu-item-header">
+                <h4 class="menu-item-name">Espresso tonic</h4>
+                <div class="menu-item-dots" aria-hidden="true"></div>
+                <span class="menu-item-price">20 zł</span>
+              </div>
+              
+              
+            </div>
+
+            <div class="menu-item-card">
+              <div class="menu-item-header">
+                <h4 class="menu-item-name">Orange espresso</h4>
+                <div class="menu-item-dots" aria-hidden="true"></div>
+                <span class="menu-item-price">20 zł</span>
+              </div>
+              
+              
+            </div>
+
+          </div>
+        </div>
+
+        <div class="menu-subsection">
+          <h3 class="subsection-title">Napoje zimne</h3>
+          <div class="menu-items-grid">
+
+            <div class="menu-item-card">
+              <div class="menu-item-header">
+                <h4 class="menu-item-name">Pepsi</h4>
+                <div class="menu-item-dots" aria-hidden="true"></div>
+                <span class="menu-item-price">10 zł</span>
+              </div>
+              
+              
+            </div>
+
+            <div class="menu-item-card">
+              <div class="menu-item-header">
+                <h4 class="menu-item-name">Pepsi zero cukru</h4>
+                <div class="menu-item-dots" aria-hidden="true"></div>
+                <span class="menu-item-price">10 zł</span>
+              </div>
+              
+              
+            </div>
+
+            <div class="menu-item-card">
+              <div class="menu-item-header">
+                <h4 class="menu-item-name">Mirinda / Mirinda zero</h4>
+                <div class="menu-item-dots" aria-hidden="true"></div>
+                <span class="menu-item-price">10 zł</span>
+              </div>
+              
+              
+            </div>
+
+            <div class="menu-item-card">
+              <div class="menu-item-header">
+                <h4 class="menu-item-name">7 UP</h4>
+                <div class="menu-item-dots" aria-hidden="true"></div>
+                <span class="menu-item-price">10 zł</span>
+              </div>
+              
+              
+            </div>
+
+            <div class="menu-item-card">
+              <div class="menu-item-header">
+                <h4 class="menu-item-name">Schweppes Tonic</h4>
+                <div class="menu-item-dots" aria-hidden="true"></div>
+                <span class="menu-item-price">10 zł</span>
+              </div>
+              
+              
+            </div>
+
+            <div class="menu-item-card">
+              <div class="menu-item-header">
+                <h4 class="menu-item-name">Lipton tea peach</h4>
+                <div class="menu-item-dots" aria-hidden="true"></div>
+                <span class="menu-item-price">10 zł</span>
+              </div>
+              
+              
+            </div>
+
+            <div class="menu-item-card">
+              <div class="menu-item-header">
+                <h4 class="menu-item-name">Lipton tea green</h4>
+                <div class="menu-item-dots" aria-hidden="true"></div>
+                <span class="menu-item-price">10 zł</span>
+              </div>
+              
+              
+            </div>
+
+          </div>
+        </div>
+
+        <div class="menu-subsection">
+          <h3 class="subsection-title">Soki TOMA</h3>
+          <div class="menu-items-grid">
+
+            <div class="menu-item-card">
+              <div class="menu-item-header">
+                <h4 class="menu-item-name">Sok pomarańczowy</h4>
+                <div class="menu-item-dots" aria-hidden="true"></div>
+                <span class="menu-item-price">10 zł</span>
+              </div>
+              
+              
+            </div>
+
+            <div class="menu-item-card">
+              <div class="menu-item-header">
+                <h4 class="menu-item-name">Sok jabłkowy</h4>
+                <div class="menu-item-dots" aria-hidden="true"></div>
+                <span class="menu-item-price">10 zł</span>
+              </div>
+              
+              
+            </div>
+
+            <div class="menu-item-card">
+              <div class="menu-item-header">
+                <h4 class="menu-item-name">Sok czarna porzeczka</h4>
+                <div class="menu-item-dots" aria-hidden="true"></div>
+                <span class="menu-item-price">10 zł</span>
+              </div>
+              
+              
+            </div>
+
+          </div>
+        </div>
+
+        <div class="menu-subsection">
+          <h3 class="subsection-title">Soki świeżo wyciskane</h3>
+          <div class="menu-items-grid">
+
+            <div class="menu-item-card">
+              <div class="menu-item-header">
+                <h4 class="menu-item-name">Sok pomarańczowy</h4>
+                <div class="menu-item-dots" aria-hidden="true"></div>
+                <span class="menu-item-price">19 zł</span>
+              </div>
+              
+              
+            </div>
+
+            <div class="menu-item-card">
+              <div class="menu-item-header">
+                <h4 class="menu-item-name">Sok grejpfrutowy</h4>
+                <div class="menu-item-dots" aria-hidden="true"></div>
+                <span class="menu-item-price">19 zł</span>
+              </div>
+              
+              
+            </div>
+
+            <div class="menu-item-card">
+              <div class="menu-item-header">
+                <h4 class="menu-item-name">Mix</h4>
+                <div class="menu-item-dots" aria-hidden="true"></div>
+                <span class="menu-item-price">19 zł</span>
+              </div>
+              
+              
+            </div>
+
+          </div>
+        </div>
+
+        <div class="menu-subsection">
+          <h3 class="subsection-title">Wody mineralne</h3>
+          <div class="menu-items-grid">
+
+            <div class="menu-item-card">
+              <div class="menu-item-header">
+                <h4 class="menu-item-name">Krystaliczne źródło gazowana / niegazowana</h4>
+                <div class="menu-item-dots" aria-hidden="true"></div>
+                <span class="menu-item-price">9 zł</span>
+              </div>
+              <p class="menu-item-desc">0,3 ml</p>
+              
+            </div>
+
+            <div class="menu-item-card">
+              <div class="menu-item-header">
+                <h4 class="menu-item-name">Aqua Panna niegazowana</h4>
+                <div class="menu-item-dots" aria-hidden="true"></div>
+                <span class="menu-item-price">19 zł</span>
+              </div>
+              <p class="menu-item-desc">0,75 ml</p>
+              
+            </div>
+
+            <div class="menu-item-card">
+              <div class="menu-item-header">
+                <h4 class="menu-item-name">San Pellegrino gazowana</h4>
+                <div class="menu-item-dots" aria-hidden="true"></div>
+                <span class="menu-item-price">19 zł</span>
+              </div>
+              <p class="menu-item-desc">0,75 ml</p>
+              
+            </div>
+
+            <div class="menu-item-card">
+              <div class="menu-item-header">
+                <h4 class="menu-item-name">Aqua Carpatica gazowana / niegazowana</h4>
+                <div class="menu-item-dots" aria-hidden="true"></div>
+                <span class="menu-item-price">19 zł</span>
+              </div>
+              <p class="menu-item-desc">0,75 ml</p>
+              
+            </div>
+
+            <div class="menu-item-card">
+              <div class="menu-item-header">
+                <h4 class="menu-item-name">Filette gazowana / niegazowana</h4>
+                <div class="menu-item-dots" aria-hidden="true"></div>
+                <span class="menu-item-price">21 zł</span>
+              </div>
+              <p class="menu-item-desc">0,75 ml</p>
+              
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+    </article>
+
+    <article class="menu-category-panel" id="panel-alkohole" data-category="alkohole">
+      <header class="category-panel-header">
+        <h2 class="category-title">Alkohole</h2>
+        <div class="teal-divider-line"></div>
+      </header>
+
+      <div class="category-subsections">
+
+        <div class="menu-subsection">
+          <h3 class="subsection-title">Drinki alkoholowe</h3>
+          <div class="menu-items-grid">
+
+            <div class="menu-item-card">
+              <div class="menu-item-header">
+                <h4 class="menu-item-name">Pornstar Martini</h4>
+                <div class="menu-item-dots" aria-hidden="true"></div>
+                <span class="menu-item-price">25 zł</span>
+              </div>
+              <p class="menu-item-desc">Distil No. 9 / marakuja / wanilia / prosecco</p>
+              
+            </div>
+
+            <div class="menu-item-card">
+              <div class="menu-item-header">
+                <h4 class="menu-item-name">Pink Lady</h4>
+                <div class="menu-item-dots" aria-hidden="true"></div>
+                <span class="menu-item-price">31 zł</span>
+              </div>
+              <p class="menu-item-desc">Hendrick's / malina / cytryna / białko</p>
+              
+            </div>
+
+            <div class="menu-item-card">
+              <div class="menu-item-header">
+                <h4 class="menu-item-name">Aperol</h4>
+                <div class="menu-item-dots" aria-hidden="true"></div>
+                <span class="menu-item-price">27 zł</span>
+              </div>
+              <p class="menu-item-desc">aperol / prosecco / soda</p>
+              
+            </div>
+
+            <div class="menu-item-card">
+              <div class="menu-item-header">
+                <h4 class="menu-item-name">Singapore Sling</h4>
+                <div class="menu-item-dots" aria-hidden="true"></div>
+                <span class="menu-item-price">33 zł</span>
+              </div>
+              <p class="menu-item-desc">drumshanbo gunpowder Irish gin / benedictine / triple sec / likier wiśniowy / limonka / ananas / grenadyna</p>
+              
+            </div>
+
+            <div class="menu-item-card">
+              <div class="menu-item-header">
+                <h4 class="menu-item-name">Negroni</h4>
+                <div class="menu-item-dots" aria-hidden="true"></div>
+                <span class="menu-item-price">24 zł</span>
+              </div>
+              <p class="menu-item-desc">ford's gin / campari / martini rosso</p>
+              
+            </div>
+
+            <div class="menu-item-card">
+              <div class="menu-item-header">
+                <h4 class="menu-item-name">Passion Caiphirinia</h4>
+                <div class="menu-item-dots" aria-hidden="true"></div>
+                <span class="menu-item-price">23 zł</span>
+              </div>
+              <p class="menu-item-desc">cachaca ipanema / marakuja / limonka / syrop z brązowego cukru</p>
+              
+            </div>
+
+            <div class="menu-item-card">
+              <div class="menu-item-header">
+                <h4 class="menu-item-name">Cherry sour</h4>
+                <div class="menu-item-dots" aria-hidden="true"></div>
+                <span class="menu-item-price">22 zł</span>
+              </div>
+              <p class="menu-item-desc">whitley neill black cherry / wiśnie / cytryna /białko</p>
+              
+            </div>
+
+            <div class="menu-item-card">
+              <div class="menu-item-header">
+                <h4 class="menu-item-name">Horse's neck</h4>
+                <div class="menu-item-dots" aria-hidden="true"></div>
+                <span class="menu-item-price">23 zł</span>
+              </div>
+              <p class="menu-item-desc">bushmills black bush / cytryna / ginger beer</p>
+              
+            </div>
+
+            <div class="menu-item-card">
+              <div class="menu-item-header">
+                <h4 class="menu-item-name">Pear spritz</h4>
+                <div class="menu-item-dots" aria-hidden="true"></div>
+                <span class="menu-item-price">27 zł</span>
+              </div>
+              <p class="menu-item-desc">drumshanbo sardinian citrus / kwiat bzu / gruszka / limonka /prosecco</p>
+              
+            </div>
+
+            <div class="menu-item-card">
+              <div class="menu-item-header">
+                <h4 class="menu-item-name">Cold apple</h4>
+                <div class="menu-item-dots" aria-hidden="true"></div>
+                <span class="menu-item-price">31 zł</span>
+              </div>
+              <p class="menu-item-desc">monkey shoulder smoky / jabłko tłoczone / agava / limonka</p>
+              
+            </div>
+
+            <div class="menu-item-card">
+              <div class="menu-item-header">
+                <h4 class="menu-item-name">Gold rush</h4>
+                <div class="menu-item-dots" aria-hidden="true"></div>
+                <span class="menu-item-price">29 zł</span>
+              </div>
+              <p class="menu-item-desc">woodford reserve / syrop miodowy /cytryna</p>
+              
+            </div>
+
+            <div class="menu-item-card">
+              <div class="menu-item-header">
+                <h4 class="menu-item-name">Brize</h4>
+                <div class="menu-item-dots" aria-hidden="true"></div>
+                <span class="menu-item-price">21 zł</span>
+              </div>
+              <p class="menu-item-desc">żubrówka czarna / liczi / mięta / limonka / cytryna</p>
+              
+            </div>
+
+          </div>
+        </div>
+
+        <div class="menu-subsection">
+          <h3 class="subsection-title">Drinki bezalkoholowe</h3>
+          <div class="menu-items-grid">
+
+            <div class="menu-item-card">
+              <div class="menu-item-header">
+                <h4 class="menu-item-name">Raspberry kiss</h4>
+                <div class="menu-item-dots" aria-hidden="true"></div>
+                <span class="menu-item-price">18 zł</span>
+              </div>
+              <p class="menu-item-desc">malina / cytryna / citrus soda</p>
+              
+            </div>
+
+            <div class="menu-item-card">
+              <div class="menu-item-header">
+                <h4 class="menu-item-name">Hawaiian</h4>
+                <div class="menu-item-dots" aria-hidden="true"></div>
+                <span class="menu-item-price">18 zł</span>
+              </div>
+              <p class="menu-item-desc">melon / ananas / limonka / prosecco 0%</p>
+              
+            </div>
+
+            <div class="menu-item-card">
+              <div class="menu-item-header">
+                <h4 class="menu-item-name">Virgin aperol</h4>
+                <div class="menu-item-dots" aria-hidden="true"></div>
+                <span class="menu-item-price">24 zł</span>
+              </div>
+              <p class="menu-item-desc">crodino / prosecco 0%</p>
+              
+            </div>
+
+            <div class="menu-item-card">
+              <div class="menu-item-header">
+                <h4 class="menu-item-name">Blue lagoon</h4>
+                <div class="menu-item-dots" aria-hidden="true"></div>
+                <span class="menu-item-price">18 zł</span>
+              </div>
+              <p class="menu-item-desc">blue curacao / limonka / mięta / citrus soda</p>
+              
+            </div>
+
+          </div>
+        </div>
+
+        <div class="menu-subsection">
+          <h3 class="subsection-title">Gin</h3>
+          <div class="menu-items-grid">
+
+            <div class="menu-item-card">
+              <div class="menu-item-header">
+                <h4 class="menu-item-name">Drumshanbo Gunpowder Irish Gin</h4>
+                <div class="menu-item-dots" aria-hidden="true"></div>
+                <span class="menu-item-price">19 zł</span>
+              </div>
+              
+              
+            </div>
+
+            <div class="menu-item-card">
+              <div class="menu-item-header">
+                <h4 class="menu-item-name">Drumshanbo Gunpowder Irish Gin Sardinian Citrus</h4>
+                <div class="menu-item-dots" aria-hidden="true"></div>
+                <span class="menu-item-price">19 zł</span>
+              </div>
+              
+              
+            </div>
+
+            <div class="menu-item-card">
+              <div class="menu-item-header">
+                <h4 class="menu-item-name">Drumshanbo Gunpowder Irish Gin California Orange Citrus</h4>
+                <div class="menu-item-dots" aria-hidden="true"></div>
+                <span class="menu-item-price">19 zł</span>
+              </div>
+              
+              
+            </div>
+
+            <div class="menu-item-card">
+              <div class="menu-item-header">
+                <h4 class="menu-item-name">Ford's gin</h4>
+                <div class="menu-item-dots" aria-hidden="true"></div>
+                <span class="menu-item-price">19 zł</span>
+              </div>
+              
+              
+            </div>
+
+            <div class="menu-item-card">
+              <div class="menu-item-header">
+                <h4 class="menu-item-name">Gin Mare</h4>
+                <div class="menu-item-dots" aria-hidden="true"></div>
+                <span class="menu-item-price">25 zł</span>
+              </div>
+              
+              
+            </div>
+
+            <div class="menu-item-card">
+              <div class="menu-item-header">
+                <h4 class="menu-item-name">The Botanist Islay Dry gin</h4>
+                <div class="menu-item-dots" aria-hidden="true"></div>
+                <span class="menu-item-price">20 zł</span>
+              </div>
+              
+              
+            </div>
+
+            <div class="menu-item-card">
+              <div class="menu-item-header">
+                <h4 class="menu-item-name">Hendrick's</h4>
+                <div class="menu-item-dots" aria-hidden="true"></div>
+                <span class="menu-item-price">20 zł</span>
+              </div>
+              
+              
+            </div>
+
+            <div class="menu-item-card">
+              <div class="menu-item-header">
+                <h4 class="menu-item-name">Hendrick's Flora Adora</h4>
+                <div class="menu-item-dots" aria-hidden="true"></div>
+                <span class="menu-item-price">25 zł</span>
+              </div>
+              
+              
+            </div>
+
+            <div class="menu-item-card">
+              <div class="menu-item-header">
+                <h4 class="menu-item-name">Hendrick's Neptunia</h4>
+                <div class="menu-item-dots" aria-hidden="true"></div>
+                <span class="menu-item-price">21 zł</span>
+              </div>
+              
+              
+            </div>
+
+            <div class="menu-item-card">
+              <div class="menu-item-header">
+                <h4 class="menu-item-name">Hendrick's Orbium</h4>
+                <div class="menu-item-dots" aria-hidden="true"></div>
+                <span class="menu-item-price">21 zł</span>
+              </div>
+              
+              
+            </div>
+
+            <div class="menu-item-card">
+              <div class="menu-item-header">
+                <h4 class="menu-item-name">The London No. 1</h4>
+                <div class="menu-item-dots" aria-hidden="true"></div>
+                <span class="menu-item-price">17 zł</span>
+              </div>
+              
+              
+            </div>
+
+            <div class="menu-item-card">
+              <div class="menu-item-header">
+                <h4 class="menu-item-name">The London No. 3</h4>
+                <div class="menu-item-dots" aria-hidden="true"></div>
+                <span class="menu-item-price">20 zł</span>
+              </div>
+              
+              
+            </div>
+
+            <div class="menu-item-card">
+              <div class="menu-item-header">
+                <h4 class="menu-item-name">Whitley Neill Raspberry Gin</h4>
+                <div class="menu-item-dots" aria-hidden="true"></div>
+                <span class="menu-item-price">17 zł</span>
+              </div>
+              
+              
+            </div>
+
+            <div class="menu-item-card">
+              <div class="menu-item-header">
+                <h4 class="menu-item-name">Whitley Neill Black Cherry Gin</h4>
+                <div class="menu-item-dots" aria-hidden="true"></div>
+                <span class="menu-item-price">17 zł</span>
+              </div>
+              
+              
+            </div>
+
+            <div class="menu-item-card">
+              <div class="menu-item-header">
+                <h4 class="menu-item-name">Canaima Small Batch</h4>
+                <div class="menu-item-dots" aria-hidden="true"></div>
+                <span class="menu-item-price">21 zł</span>
+              </div>
+              
+              
+            </div>
+
+            <div class="menu-item-card">
+              <div class="menu-item-header">
+                <h4 class="menu-item-name">Brockmans Gin</h4>
+                <div class="menu-item-dots" aria-hidden="true"></div>
+                <span class="menu-item-price">19 zł</span>
+              </div>
+              
+              
+            </div>
+
+            <div class="menu-item-card">
+              <div class="menu-item-header">
+                <h4 class="menu-item-name">Martin Miller's gin</h4>
+                <div class="menu-item-dots" aria-hidden="true"></div>
+                <span class="menu-item-price">17 zł</span>
+              </div>
+              
+              
+            </div>
+
+            <div class="menu-item-card">
+              <div class="menu-item-header">
+                <h4 class="menu-item-name">Roku</h4>
+                <div class="menu-item-dots" aria-hidden="true"></div>
+                <span class="menu-item-price">17 zł</span>
+              </div>
+              
+              
+            </div>
+
+            <div class="menu-item-card">
+              <div class="menu-item-header">
+                <h4 class="menu-item-name">Citadelle</h4>
+                <div class="menu-item-dots" aria-hidden="true"></div>
+                <span class="menu-item-price">17 zł</span>
+              </div>
+              
+              
+            </div>
+
+            <div class="menu-item-card">
+              <div class="menu-item-header">
+                <h4 class="menu-item-name">Citadelle Rouge</h4>
+                <div class="menu-item-dots" aria-hidden="true"></div>
+                <span class="menu-item-price">17 zł</span>
+              </div>
+              
+              
+            </div>
+
+            <div class="menu-item-card">
+              <div class="menu-item-header">
+                <h4 class="menu-item-name">Citadelle Jardin d'Été</h4>
+                <div class="menu-item-dots" aria-hidden="true"></div>
+                <span class="menu-item-price">17 zł</span>
+              </div>
+              
+              
+            </div>
+
+            <div class="menu-item-card">
+              <div class="menu-item-header">
+                <h4 class="menu-item-name">Haswell</h4>
+                <div class="menu-item-dots" aria-hidden="true"></div>
+                <span class="menu-item-price">17 zł</span>
+              </div>
+              
+              
+            </div>
+
+            <div class="menu-item-card">
+              <div class="menu-item-header">
+                <h4 class="menu-item-name">Bloom Passion Fruit &amp; Vanilla</h4>
+                <div class="menu-item-dots" aria-hidden="true"></div>
+                <span class="menu-item-price">15 zł</span>
+              </div>
+              
+              
+            </div>
+
+            <div class="menu-item-card">
+              <div class="menu-item-header">
+                <h4 class="menu-item-name">GinRaw</h4>
+                <div class="menu-item-dots" aria-hidden="true"></div>
+                <span class="menu-item-price">20 zł</span>
+              </div>
+              
+              
+            </div>
+
+            <div class="menu-item-card">
+              <div class="menu-item-header">
+                <h4 class="menu-item-name">Santa Ana</h4>
+                <div class="menu-item-dots" aria-hidden="true"></div>
+                <span class="menu-item-price">18 zł</span>
+              </div>
+              
+              
+            </div>
+
+            <div class="menu-item-card">
+              <div class="menu-item-header">
+                <h4 class="menu-item-name">Sir Edmond-Bourbon Vanilla Insfused</h4>
+                <div class="menu-item-dots" aria-hidden="true"></div>
+                <span class="menu-item-price">20 zł</span>
+              </div>
+              
+              
+            </div>
+
+            <div class="menu-item-card">
+              <div class="menu-item-header">
+                <h4 class="menu-item-name">Cotswolds Old Tom</h4>
+                <div class="menu-item-dots" aria-hidden="true"></div>
+                <span class="menu-item-price">25 zł</span>
+              </div>
+              
+              
+            </div>
+
+            <div class="menu-item-card">
+              <div class="menu-item-header">
+                <h4 class="menu-item-name">Berlin dry gin</h4>
+                <div class="menu-item-dots" aria-hidden="true"></div>
+                <span class="menu-item-price">18 zł</span>
+              </div>
+              
+              
+            </div>
+
+            <div class="menu-item-card">
+              <div class="menu-item-header">
+                <h4 class="menu-item-name">Copperhead</h4>
+                <div class="menu-item-dots" aria-hidden="true"></div>
+                <span class="menu-item-price">27 zł</span>
+              </div>
+              
+              
+            </div>
+
+            <div class="menu-item-card">
+              <div class="menu-item-header">
+                <h4 class="menu-item-name">Estate Gin Bio</h4>
+                <div class="menu-item-dots" aria-hidden="true"></div>
+                <span class="menu-item-price">17 zł</span>
+              </div>
+              
+              
+            </div>
+
+          </div>
+        </div>
+
+        <div class="menu-subsection">
+          <h3 class="subsection-title">Rum</h3>
+          <div class="menu-items-grid">
+
+            <div class="menu-item-card">
+              <div class="menu-item-header">
+                <h4 class="menu-item-name">Brugal Blanco</h4>
+                <div class="menu-item-dots" aria-hidden="true"></div>
+                <span class="menu-item-price">12 zł</span>
+              </div>
+              
+              
+            </div>
+
+            <div class="menu-item-card">
+              <div class="menu-item-header">
+                <h4 class="menu-item-name">Brugal Anejo</h4>
+                <div class="menu-item-dots" aria-hidden="true"></div>
+                <span class="menu-item-price">12 zł</span>
+              </div>
+              
+              
+            </div>
+
+            <div class="menu-item-card">
+              <div class="menu-item-header">
+                <h4 class="menu-item-name">Brugal 1888</h4>
+                <div class="menu-item-dots" aria-hidden="true"></div>
+                <span class="menu-item-price">22 zł</span>
+              </div>
+              
+              
+            </div>
+
+            <div class="menu-item-card">
+              <div class="menu-item-header">
+                <h4 class="menu-item-name">Kraken</h4>
+                <div class="menu-item-dots" aria-hidden="true"></div>
+                <span class="menu-item-price">14 zł</span>
+              </div>
+              
+              
+            </div>
+
+            <div class="menu-item-card">
+              <div class="menu-item-header">
+                <h4 class="menu-item-name">Kraken Coffee</h4>
+                <div class="menu-item-dots" aria-hidden="true"></div>
+                <span class="menu-item-price">14 zł</span>
+              </div>
+              
+              
+            </div>
+
+          </div>
+        </div>
+
+        <div class="menu-subsection">
+          <h3 class="subsection-title">Wódka</h3>
+          <div class="menu-items-grid">
+
+            <div class="menu-item-card">
+              <div class="menu-item-header">
+                <h4 class="menu-item-name">Żubrówka Czarna</h4>
+                <div class="menu-item-dots" aria-hidden="true"></div>
+                
+              </div>
+              
+              
+            </div>
+
+            <div class="menu-item-card">
+              <div class="menu-item-header">
+                <h4 class="menu-item-name">Distil No. 9</h4>
+                <div class="menu-item-dots" aria-hidden="true"></div>
+                
+              </div>
+              
+              
+            </div>
+
+            <div class="menu-item-card">
+              <div class="menu-item-header">
+                <h4 class="menu-item-name">Chopin Rye</h4>
+                <div class="menu-item-dots" aria-hidden="true"></div>
+                
+              </div>
+              
+              
+            </div>
+
+            <div class="menu-item-card">
+              <div class="menu-item-header">
+                <h4 class="menu-item-name">Chopin Potato</h4>
+                <div class="menu-item-dots" aria-hidden="true"></div>
+                
+              </div>
+              
+              
+            </div>
+
+            <div class="menu-item-card">
+              <div class="menu-item-header">
+                <h4 class="menu-item-name">Reyka</h4>
+                <div class="menu-item-dots" aria-hidden="true"></div>
+                <span class="menu-item-price">15 zł</span>
+              </div>
+              
+              
+            </div>
+
+          </div>
+        </div>
+
+        <div class="menu-subsection">
+          <h3 class="subsection-title">Likiery</h3>
+          <div class="menu-items-grid">
+
+            <div class="menu-item-card">
+              <div class="menu-item-header">
+                <h4 class="menu-item-name">Marie Brizard Peach</h4>
+                <div class="menu-item-dots" aria-hidden="true"></div>
+                <span class="menu-item-price">9 zł</span>
+              </div>
+              
+              
+            </div>
+
+            <div class="menu-item-card">
+              <div class="menu-item-header">
+                <h4 class="menu-item-name">Marie Brizard Elderflower</h4>
+                <div class="menu-item-dots" aria-hidden="true"></div>
+                <span class="menu-item-price">9 zł</span>
+              </div>
+              
+              
+            </div>
+
+            <div class="menu-item-card">
+              <div class="menu-item-header">
+                <h4 class="menu-item-name">Marie Brizard Triple Sec</h4>
+                <div class="menu-item-dots" aria-hidden="true"></div>
+                <span class="menu-item-price">9 zł</span>
+              </div>
+              
+              
+            </div>
+
+            <div class="menu-item-card">
+              <div class="menu-item-header">
+                <h4 class="menu-item-name">Marie Brizard Litchi</h4>
+                <div class="menu-item-dots" aria-hidden="true"></div>
+                <span class="menu-item-price">9 zł</span>
+              </div>
+              
+              
+            </div>
+
+            <div class="menu-item-card">
+              <div class="menu-item-header">
+                <h4 class="menu-item-name">Chambord</h4>
+                <div class="menu-item-dots" aria-hidden="true"></div>
+                <span class="menu-item-price">15 zł</span>
+              </div>
+              
+              
+            </div>
+
+            <div class="menu-item-card">
+              <div class="menu-item-header">
+                <h4 class="menu-item-name">Kahlua</h4>
+                <div class="menu-item-dots" aria-hidden="true"></div>
+                <span class="menu-item-price">9 zł</span>
+              </div>
+              
+              
+            </div>
+
+            <div class="menu-item-card">
+              <div class="menu-item-header">
+                <h4 class="menu-item-name">Jagermeister</h4>
+                <div class="menu-item-dots" aria-hidden="true"></div>
+                <span class="menu-item-price">9 zł</span>
+              </div>
+              
+              
+            </div>
+
+            <div class="menu-item-card">
+              <div class="menu-item-header">
+                <h4 class="menu-item-name">Passoa</h4>
+                <div class="menu-item-dots" aria-hidden="true"></div>
+                <span class="menu-item-price">9 zł</span>
+              </div>
+              
+              
+            </div>
+
+            <div class="menu-item-card">
+              <div class="menu-item-header">
+                <h4 class="menu-item-name">Cointreau</h4>
+                <div class="menu-item-dots" aria-hidden="true"></div>
+                <span class="menu-item-price">10 zł</span>
+              </div>
+              
+              
+            </div>
+
+          </div>
+        </div>
+
+        <div class="menu-subsection">
+          <h3 class="subsection-title">Scotch Whisky</h3>
+          <div class="menu-items-grid">
+
+            <div class="menu-item-card">
+              <div class="menu-item-header">
+                <h4 class="menu-item-name">Grant's</h4>
+                <div class="menu-item-dots" aria-hidden="true"></div>
+                <span class="menu-item-price">10 zł</span>
+              </div>
+              
+              
+            </div>
+
+            <div class="menu-item-card">
+              <div class="menu-item-header">
+                <h4 class="menu-item-name">Grant's Triple Wood Smoky</h4>
+                <div class="menu-item-dots" aria-hidden="true"></div>
+                <span class="menu-item-price">10 zł</span>
+              </div>
+              
+              
+            </div>
+
+            <div class="menu-item-card">
+              <div class="menu-item-header">
+                <h4 class="menu-item-name">Grant's Ale Cask</h4>
+                <div class="menu-item-dots" aria-hidden="true"></div>
+                <span class="menu-item-price">10 zł</span>
+              </div>
+              
+              
+            </div>
+
+            <div class="menu-item-card">
+              <div class="menu-item-header">
+                <h4 class="menu-item-name">Monkey Shoulder</h4>
+                <div class="menu-item-dots" aria-hidden="true"></div>
+                <span class="menu-item-price">15 zł</span>
+              </div>
+              
+              
+            </div>
+
+            <div class="menu-item-card">
+              <div class="menu-item-header">
+                <h4 class="menu-item-name">Monkey Shoulder Smoky</h4>
+                <div class="menu-item-dots" aria-hidden="true"></div>
+                <span class="menu-item-price">15 zł</span>
+              </div>
+              
+              
+            </div>
+
+            <div class="menu-item-card">
+              <div class="menu-item-header">
+                <h4 class="menu-item-name">Glenfiddich 12 Y.O.</h4>
+                <div class="menu-item-dots" aria-hidden="true"></div>
+                <span class="menu-item-price">20 zł</span>
+              </div>
+              
+              
+            </div>
+
+            <div class="menu-item-card">
+              <div class="menu-item-header">
+                <h4 class="menu-item-name">Glenfiddich 15 Y.O.</h4>
+                <div class="menu-item-dots" aria-hidden="true"></div>
+                <span class="menu-item-price">30 zł</span>
+              </div>
+              
+              
+            </div>
+
+            <div class="menu-item-card">
+              <div class="menu-item-header">
+                <h4 class="menu-item-name">The Macallan 12 Y.O. Double Cask</h4>
+                <div class="menu-item-dots" aria-hidden="true"></div>
+                <span class="menu-item-price">35 zł</span>
+              </div>
+              
+              
+            </div>
+
+            <div class="menu-item-card">
+              <div class="menu-item-header">
+                <h4 class="menu-item-name">The Macallan 12 Y.O. Sherry Oak Cask</h4>
+                <div class="menu-item-dots" aria-hidden="true"></div>
+                <span class="menu-item-price">35 zł</span>
+              </div>
+              
+              
+            </div>
+
+            <div class="menu-item-card">
+              <div class="menu-item-header">
+                <h4 class="menu-item-name">BenRiach 10 Y.O.</h4>
+                <div class="menu-item-dots" aria-hidden="true"></div>
+                <span class="menu-item-price">20 zł</span>
+              </div>
+              
+              
+            </div>
+
+            <div class="menu-item-card">
+              <div class="menu-item-header">
+                <h4 class="menu-item-name">BenRiach The Smoky Ten</h4>
+                <div class="menu-item-dots" aria-hidden="true"></div>
+                <span class="menu-item-price">22 zł</span>
+              </div>
+              
+              
+            </div>
+
+            <div class="menu-item-card">
+              <div class="menu-item-header">
+                <h4 class="menu-item-name">BenRiach 12 Y.O.</h4>
+                <div class="menu-item-dots" aria-hidden="true"></div>
+                <span class="menu-item-price">23 zł</span>
+              </div>
+              
+              
+            </div>
+
+            <div class="menu-item-card">
+              <div class="menu-item-header">
+                <h4 class="menu-item-name">BenRiach The Smoky Twelve</h4>
+                <div class="menu-item-dots" aria-hidden="true"></div>
+                <span class="menu-item-price">24 zł</span>
+              </div>
+              
+              
+            </div>
+
+          </div>
+        </div>
+
+        <div class="menu-subsection">
+          <h3 class="subsection-title">Whiskey Irlandzka</h3>
+          <div class="menu-items-grid">
+
+            <div class="menu-item-card">
+              <div class="menu-item-header">
+                <h4 class="menu-item-name">Tullamore D.E.W.</h4>
+                <div class="menu-item-dots" aria-hidden="true"></div>
+                <span class="menu-item-price">12 zł</span>
+              </div>
+              
+              
+            </div>
+
+            <div class="menu-item-card">
+              <div class="menu-item-header">
+                <h4 class="menu-item-name">Tullamore D.E.W. Rum Cask</h4>
+                <div class="menu-item-dots" aria-hidden="true"></div>
+                <span class="menu-item-price">12 zł</span>
+              </div>
+              
+              
+            </div>
+
+            <div class="menu-item-card">
+              <div class="menu-item-header">
+                <h4 class="menu-item-name">Bushmills Original</h4>
+                <div class="menu-item-dots" aria-hidden="true"></div>
+                <span class="menu-item-price">12 zł</span>
+              </div>
+              
+              
+            </div>
+
+            <div class="menu-item-card">
+              <div class="menu-item-header">
+                <h4 class="menu-item-name">Bushmills Black Bush </h4>
+                <div class="menu-item-dots" aria-hidden="true"></div>
+                <span class="menu-item-price">15 zł</span>
+              </div>
+              
+              
+            </div>
+
+          </div>
+        </div>
+
+        <div class="menu-subsection">
+          <h3 class="subsection-title">Bourbon</h3>
+          <div class="menu-items-grid">
+
+            <div class="menu-item-card">
+              <div class="menu-item-header">
+                <h4 class="menu-item-name">Gentelman Jack</h4>
+                <div class="menu-item-dots" aria-hidden="true"></div>
+                <span class="menu-item-price">15 zł</span>
+              </div>
+              
+              
+            </div>
+
+            <div class="menu-item-card">
+              <div class="menu-item-header">
+                <h4 class="menu-item-name">Wild Turkey</h4>
+                <div class="menu-item-dots" aria-hidden="true"></div>
+                <span class="menu-item-price">15 zł</span>
+              </div>
+              
+              
+            </div>
+
+            <div class="menu-item-card">
+              <div class="menu-item-header">
+                <h4 class="menu-item-name">Elijah Craig Small Batch Bourbon</h4>
+                <div class="menu-item-dots" aria-hidden="true"></div>
+                <span class="menu-item-price">20 zł</span>
+              </div>
+              
+              
+            </div>
+
+            <div class="menu-item-card">
+              <div class="menu-item-header">
+                <h4 class="menu-item-name">Woodford Reserve</h4>
+                <div class="menu-item-dots" aria-hidden="true"></div>
+                <span class="menu-item-price">20 zł</span>
+              </div>
+              
+              
+            </div>
+
+            <div class="menu-item-card">
+              <div class="menu-item-header">
+                <h4 class="menu-item-name">Woodford Reserve Rye</h4>
+                <div class="menu-item-dots" aria-hidden="true"></div>
+                <span class="menu-item-price">20 zł</span>
+              </div>
+              
+              
+            </div>
+
+          </div>
+        </div>
+
+        <div class="menu-subsection">
+          <h3 class="subsection-title">Tequila</h3>
+          <div class="menu-items-grid">
+
+            <div class="menu-item-card">
+              <div class="menu-item-header">
+                <h4 class="menu-item-name">Jose Cuervo Silver</h4>
+                <div class="menu-item-dots" aria-hidden="true"></div>
+                <span class="menu-item-price">15 zł</span>
+              </div>
+              
+              
+            </div>
+
+            <div class="menu-item-card">
+              <div class="menu-item-header">
+                <h4 class="menu-item-name">Jose Cuervo Resposado</h4>
+                <div class="menu-item-dots" aria-hidden="true"></div>
+                <span class="menu-item-price">15 zł</span>
+              </div>
+              
+              
+            </div>
+
+            <div class="menu-item-card">
+              <div class="menu-item-header">
+                <h4 class="menu-item-name">Herradura Plata</h4>
+                <div class="menu-item-dots" aria-hidden="true"></div>
+                <span class="menu-item-price">30 zł</span>
+              </div>
+              
+              
+            </div>
+
+            <div class="menu-item-card">
+              <div class="menu-item-header">
+                <h4 class="menu-item-name">Herradura Resposado</h4>
+                <div class="menu-item-dots" aria-hidden="true"></div>
+                <span class="menu-item-price">30 zł</span>
+              </div>
+              
+              
+            </div>
+
+          </div>
+        </div>
+
+        <div class="menu-subsection">
+          <h3 class="subsection-title">Martini / Vermouth</h3>
+          <div class="menu-items-grid">
+
+            <div class="menu-item-card">
+              <div class="menu-item-header">
+                <h4 class="menu-item-name">Aperol</h4>
+                <div class="menu-item-dots" aria-hidden="true"></div>
+                <span class="menu-item-price">12 zł</span>
+              </div>
+              
+              
+            </div>
+
+            <div class="menu-item-card">
+              <div class="menu-item-header">
+                <h4 class="menu-item-name">Campari</h4>
+                <div class="menu-item-dots" aria-hidden="true"></div>
+                <span class="menu-item-price">15 zł</span>
+              </div>
+              
+              
+            </div>
+
+            <div class="menu-item-card">
+              <div class="menu-item-header">
+                <h4 class="menu-item-name">Martini Bianco</h4>
+                <div class="menu-item-dots" aria-hidden="true"></div>
+                <span class="menu-item-price">12 zł</span>
+              </div>
+              
+              
+            </div>
+
+            <div class="menu-item-card">
+              <div class="menu-item-header">
+                <h4 class="menu-item-name">Martini Rosso</h4>
+                <div class="menu-item-dots" aria-hidden="true"></div>
+                <span class="menu-item-price">12 zł</span>
+              </div>
+              
+              
+            </div>
+
+            <div class="menu-item-card">
+              <div class="menu-item-header">
+                <h4 class="menu-item-name">Martini Rosato</h4>
+                <div class="menu-item-dots" aria-hidden="true"></div>
+                <span class="menu-item-price">12 zł</span>
+              </div>
+              
+              
+            </div>
+
+            <div class="menu-item-card">
+              <div class="menu-item-header">
+                <h4 class="menu-item-name">Martini Fiero</h4>
+                <div class="menu-item-dots" aria-hidden="true"></div>
+                <span class="menu-item-price">12 zł</span>
+              </div>
+              
+              
+            </div>
+
+            <div class="menu-item-card">
+              <div class="menu-item-header">
+                <h4 class="menu-item-name">Martini Extra Dry</h4>
+                <div class="menu-item-dots" aria-hidden="true"></div>
+                <span class="menu-item-price">12 zł</span>
+              </div>
+              
+              
+            </div>
+
+          </div>
+        </div>
+
+        <div class="menu-subsection">
+          <h3 class="subsection-title">Cognac / Brandy</h3>
+          <div class="menu-items-grid">
+
+            <div class="menu-item-card">
+              <div class="menu-item-header">
+                <h4 class="menu-item-name">Gautier VS</h4>
+                <div class="menu-item-dots" aria-hidden="true"></div>
+                <span class="menu-item-price">15 zł</span>
+              </div>
+              
+              
+            </div>
+
+            <div class="menu-item-card">
+              <div class="menu-item-header">
+                <h4 class="menu-item-name">Gautier VSOP</h4>
+                <div class="menu-item-dots" aria-hidden="true"></div>
+                <span class="menu-item-price">18 zł</span>
+              </div>
+              
+              
+            </div>
+
+            <div class="menu-item-card">
+              <div class="menu-item-header">
+                <h4 class="menu-item-name">Gautier XO</h4>
+                <div class="menu-item-dots" aria-hidden="true"></div>
+                <span class="menu-item-price">60 zł</span>
+              </div>
+              
+              
+            </div>
+
+            <div class="menu-item-card">
+              <div class="menu-item-header">
+                <h4 class="menu-item-name">Metaxa 5</h4>
+                <div class="menu-item-dots" aria-hidden="true"></div>
+                <span class="menu-item-price">15 zł</span>
+              </div>
+              
+              
+            </div>
+
+            <div class="menu-item-card">
+              <div class="menu-item-header">
+                <h4 class="menu-item-name">Metaxa 7</h4>
+                <div class="menu-item-dots" aria-hidden="true"></div>
+                <span class="menu-item-price">16 zł</span>
+              </div>
+              
+              
+            </div>
+
+          </div>
+        </div>
+
+        <div class="menu-subsection">
+          <h3 class="subsection-title">Wino</h3>
+          <div class="menu-items-grid">
+
+            <div class="menu-item-card">
+              <div class="menu-item-header">
+                <h4 class="menu-item-name">Champagne Laurent Lequart Réserve Brut (Francja)  </h4>
+                <div class="menu-item-dots" aria-hidden="true"></div>
+                <span class="menu-item-price">350 zł</span>
+              </div>
+              <p class="menu-item-desc">Wino białe / Intensywne aromaty brzoskwiń oraz owoców cytrusowych łączą się z nutami kwiatowymi oraz pomarańczowymi</p>
+              
+            </div>
+
+            <div class="menu-item-card">
+              <div class="menu-item-header">
+                <h4 class="menu-item-name">Faustino Rivero Ulecia Gold Sparkling Moscato (Hiszpania)        </h4>
+                <div class="menu-item-dots" aria-hidden="true"></div>
+                <span class="menu-item-price">80 zł</span>
+              </div>
+              <p class="menu-item-desc">Wino białe / Lekkie musujące wino o aromatach świeżych cytrusów oraz kwiatów. W ustach orzeźwiające, lekkie i świeże.</p>
+              
+            </div>
+
+            <div class="menu-item-card">
+              <div class="menu-item-header">
+                <h4 class="menu-item-name">Ca'Tullio Prosecco Rosé Brut (Włochy)                 </h4>
+                <div class="menu-item-dots" aria-hidden="true"></div>
+                <span class="menu-item-price">105 zł</span>
+              </div>
+              <p class="menu-item-desc">Wino różowe / Delikatne Prosecco o aromacie malin, truskawek oraz nut kwiatowych. Lekkie i świeże w ustach.</p>
+              
+            </div>
+
+            <div class="menu-item-card">
+              <div class="menu-item-header">
+                <h4 class="menu-item-name">Quinta Da Raza Pet-Nat (Portugalia)                 </h4>
+                <div class="menu-item-dots" aria-hidden="true"></div>
+                <span class="menu-item-price">135 zł</span>
+              </div>
+              <p class="menu-item-desc">Wino białe / Wino naturalne o delikatnych bąbelkach. Intensywne aromaty gruszek i brzoskwiń z lekkimi tostowymi nutami.</p>
+              
+            </div>
+
+            <div class="menu-item-card">
+              <div class="menu-item-header">
+                <h4 class="menu-item-name">Domäne Wachau Grüner Veltliner Federspiel Terrassen (Austria)         </h4>
+                <div class="menu-item-dots" aria-hidden="true"></div>
+                <span class="menu-item-price">165 zł</span>
+              </div>
+              <p class="menu-item-desc">Wino białe / Soczysta owocowość oraz delikatna przyprawowość oferują lekkość i orzeźwienie. Wino ze złożonym pikantnym finiszem.</p>
+              
+            </div>
+
+            <div class="menu-item-card">
+              <div class="menu-item-header">
+                <h4 class="menu-item-name">Turnau Seyval Blanc (Polska)                                                           </h4>
+                <div class="menu-item-dots" aria-hidden="true"></div>
+                <span class="menu-item-price">145 zł</span>
+              </div>
+              <p class="menu-item-desc">Wino białe / Kompozycja aromatów cytrusowych, zielonego jabłka oraz delikatną nutą  jaśminową. Wino rześkie w ustach z delikatnym finiszem.</p>
+              
+            </div>
+
+            <div class="menu-item-card">
+              <div class="menu-item-header">
+                <h4 class="menu-item-name">Gardenos Rioja Reserva (Hiszpania)                                                            </h4>
+                <div class="menu-item-dots" aria-hidden="true"></div>
+                <span class="menu-item-price">110 zł</span>
+              </div>
+              <p class="menu-item-desc">Wino czerwone / Aromaty ciemnych dojrzałych owoców współgrają z nutami mentolowymi. Wino z pełnym i gładkim finiszem.</p>
+              
+            </div>
+
+            <div class="menu-item-card">
+              <div class="menu-item-header">
+                <h4 class="menu-item-name">Tenuta di Morzano Chianti Riserva il Quatro (Włochy)                             </h4>
+                <div class="menu-item-dots" aria-hidden="true"></div>
+                <span class="menu-item-price">120 zł</span>
+              </div>
+              <p class="menu-item-desc">Wino czerwone / Połączenie aromatów dojrzałych czerwonych owocow oraz przypraw robią wino okrągłym z delikatnym finiszem.</p>
+              
+            </div>
+
+            <div class="menu-item-card">
+              <div class="menu-item-header">
+                <h4 class="menu-item-name">Quinta Da Raza Tinto - Nat (Portugalia)                                        </h4>
+                <div class="menu-item-dots" aria-hidden="true"></div>
+                <span class="menu-item-price">150 zł</span>
+              </div>
+              <p class="menu-item-desc">Wino czerwone / Naturalne wino o lekkich bąbelkach. Mocne aromaty czarnych owoców łączą się z lekkimi nutami chlebowymi.</p>
+              
+            </div>
+
+            <div class="menu-item-card">
+              <div class="menu-item-header">
+                <h4 class="menu-item-name">Mount Hermon Cabernet Sauvignon (Izrael)                               </h4>
+                <div class="menu-item-dots" aria-hidden="true"></div>
+                <span class="menu-item-price">150 zł</span>
+              </div>
+              <p class="menu-item-desc">Wino czerwone / Świeże aromaty dojrzałych malin wypełnione nutami ziołowymi. Lekkie I rześkie z przyjemnym finiszem.</p>
+              
+            </div>
+
+          </div>
+        </div>
+
+        <div class="menu-subsection">
+          <h3 class="subsection-title">Piwa lane</h3>
+          <div class="menu-items-grid">
+
+            <div class="menu-item-card">
+              <div class="menu-item-header">
+                <h4 class="menu-item-name">Heineken</h4>
+                <div class="menu-item-dots" aria-hidden="true"></div>
+                
+              </div>
+              
+              
+            </div>
+
+            <div class="menu-item-card">
+              <div class="menu-item-header">
+                <h4 class="menu-item-name">Żywiec biały</h4>
+                <div class="menu-item-dots" aria-hidden="true"></div>
+                
+              </div>
+              
+              
+            </div>
+
+          </div>
+        </div>
+
+        <div class="menu-subsection">
+          <h3 class="subsection-title">Piwa butelkowe 0,5 l</h3>
+          <div class="menu-items-grid">
+
+            <div class="menu-item-card">
+              <div class="menu-item-header">
+                <h4 class="menu-item-name">Desperados</h4>
+                <div class="menu-item-dots" aria-hidden="true"></div>
+                <span class="menu-item-price">12 zł</span>
+              </div>
+              
+              
+            </div>
+
+            <div class="menu-item-card">
+              <div class="menu-item-header">
+                <h4 class="menu-item-name">Żywiec IPA</h4>
+                <div class="menu-item-dots" aria-hidden="true"></div>
+                <span class="menu-item-price">13 zł</span>
+              </div>
+              
+              
+            </div>
+
+            <div class="menu-item-card">
+              <div class="menu-item-header">
+                <h4 class="menu-item-name">Żywiec APA</h4>
+                <div class="menu-item-dots" aria-hidden="true"></div>
+                <span class="menu-item-price">13 zł</span>
+              </div>
+              
+              
+            </div>
+
+            <div class="menu-item-card">
+              <div class="menu-item-header">
+                <h4 class="menu-item-name">Warka Strong</h4>
+                <div class="menu-item-dots" aria-hidden="true"></div>
+                <span class="menu-item-price">13 zł</span>
+              </div>
+              
+              
+            </div>
+
+            <div class="menu-item-card">
+              <div class="menu-item-header">
+                <h4 class="menu-item-name">Warka Radler</h4>
+                <div class="menu-item-dots" aria-hidden="true"></div>
+                <span class="menu-item-price">13 zł</span>
+              </div>
+              
+              
+            </div>
+
+            <div class="menu-item-card">
+              <div class="menu-item-header">
+                <h4 class="menu-item-name">Żywiec 0.0 %</h4>
+                <div class="menu-item-dots" aria-hidden="true"></div>
+                <span class="menu-item-price">13 zł</span>
+              </div>
+              
+              
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+    </article>
+
+      </div>
+
+      <!-- SEKCJA: LISTA ALERGENÓW -->
+      <section class="menu-allergens-section" id="alergeny" aria-labelledby="headingAlergeny">
+        <div class="allergens-container">
+          <h3 id="headingAlergeny" class="allergens-title">Lista alergenów</h3>
+          <p class="allergens-subtitle">(sprawdź numery podane przy daniach)</p>
+          <ol class="allergens-numbered-list">
+            <li><strong>1.</strong> ZBOŻA ZAWIERAJĄCE GLUTEN (TJ. PSZENICA, ŻYTO, JĘCZMIEŃ, OWIES, PSZENICA ORKISZ LUB ICH ODMIANY HYBRYDOWE) ORAZ PRODUKTY POCHODNE.</li>
+            <li><strong>2.</strong> SKORUPIAKI I PRODUKTY POCHODNE.</li>
+            <li><strong>3.</strong> JAJA I PRODUKTY POCHODNE.</li>
+            <li><strong>4.</strong> RYBY I PRODUKTY POCHODNE.</li>
+            <li><strong>5.</strong> ORZESZKI ZIEMNE (ORZESZKI ARACHIDOWE) I PRODUKTY POCHODNE.</li>
+            <li><strong>6.</strong> SOJA I PRODUKTY POCHODNE.</li>
+            <li><strong>7.</strong> MLEKO I PRODUKTY POCHODNE (ŁĄCZNIE Z LAKTOZĄ).</li>
+            <li><strong>8.</strong> ORZECHY, TJ. MIGDAŁY, ORZECHY LASKOWE, ORZECHY WŁOSKIE, ORZECHY NERKOWCA, ORZECHY PEKAN, ORZECHY BRAZYLIJSKIE, PISTACJE/ORZECH PISTACJOWY, ORZECHY MAKADAMIA I PRODUKTY POCHODNE.</li>
+            <li><strong>9.</strong> SELER I PRODUKTY POCHODNE.</li>
+            <li><strong>10.</strong> GORCZYCA I PRODUKTY POCHODNE.</li>
+            <li><strong>11.</strong> NASIONA SEZAMU I PRODUKTY POCHODNE.</li>
+            <li><strong>12.</strong> DWUTLENEK SIARKI I SIARCZYNY W STĘŻENIACH POWYŻEJ 10 MG/KG LUB 10 MG/L W PRZELICZENIU NA SO2.</li>
+            <li><strong>13.</strong> ŁUBIN I PRODUKTY POCHODNE.</li>
+          </ol>
+        </div>
+      </section>
+
+    </div>
+
+  </main>
+
+  <!-- =========================================================
+       STOPKA STRONY
+       ========================================================= -->
+  <footer class="site-footer" id="kontakt">
+    <div class="footer-container">
+      
+      <div class="footer-col footer-contact-col">
+        <h3 class="footer-heading">Kontakt</h3>
+        <div class="footer-text-block">
+          <p>ul. Rynek 21</p>
+          <p>63-400 Ostrów Wielkopolski</p>
+          <p><a href="tel:+48533212120" class="footer-link-item">Rezerwacje +48 533 212 120</a></p>
+        </div>
+      </div>
+
+      <div class="footer-col footer-hours-col">
+        <h3 class="footer-heading">Godziny otwarcia</h3>
+        <div class="footer-text-block">
+          <p>poniedziałek - sobota 11:00 - do ostatniego gościa</p>
+          <p>niedziela 12:00 - 23:00</p>
+          <p>kuchnia czynna do 22:00</p>
+        </div>
+      </div>
+
+      <div class="footer-col footer-brand-col">
+        <img src="assets/images/Aura_logo_white_crop.png" alt="Aura Restauracja à la carte" class="footer-logo">
+        <p class="footer-tagline">Zawsze w dobrej aurze</p>
+        <div class="footer-socials">
+          <a href="https://www.instagram.com/aura.restauracja?igsh=MXBmbDlhY2dtZnp1bA==" target="_blank" rel="noopener" class="footer-social-link" aria-label="Instagram">
+            <svg viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+          </a>
+          <a href="https://m.facebook.com/profile.php/?id=61554936105531" target="_blank" rel="noopener" class="footer-social-link" aria-label="Facebook">
+            <svg viewBox="0 0 24 24"><path d="M9 8h-3v4h3v12h5v-12h3.642l.358-4h-4v-1.667c0-.955.192-1.333 1.115-1.333h2.885v-5h-3.808c-3.596 0-5.192 1.583-5.192 4.615v3.385z"/></svg>
+          </a>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="footer-bottom">
+      <div>© 2026 by Aura. Wszelkie prawa zastrzeżone.</div>
+      <div>Realizacja: <a href="https://studio.skorwider.pl" target="_blank" rel="noopener">studio.skorwider.pl</a></div>
+    </div>
+  </footer>
+
+  <script src="assets/js/main.js"></script>
+</body>
+</html>

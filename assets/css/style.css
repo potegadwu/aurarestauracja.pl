@@ -131,15 +131,21 @@ header.site-header {
 .nav-link {
   text-decoration: none;
   font-family: var(--font-main);
-  font-size: 1.05rem;
+  font-size: 1.02rem;
   font-weight: 400;
-  letter-spacing: 0.04em;
+  letter-spacing: 0.03em;
   color: #111111;
   transition: var(--transition);
   position: relative;
   padding: 6px 0;
   display: inline-flex;
   align-items: center;
+}
+
+.nav-link.nav-multiline {
+  line-height: 1.15;
+  text-align: center;
+  font-size: 0.95rem;
 }
 
 .nav-link::after {
@@ -153,15 +159,17 @@ header.site-header {
   transition: width 0.3s ease;
 }
 
-.nav-link:hover {
+.nav-link:hover,
+.nav-link.active {
   color: var(--aura-teal);
 }
 
-.nav-link:hover::after {
+.nav-link:hover::after,
+.nav-link.active::after {
   width: 100%;
 }
 
-/* Podmenu rozwijane po najechaniu na Menu (w linii poniżej: Dania, Napoje, Alkohole) */
+/* Podmenu rozwijane po najechaniu na Menu (BEZ APLI - czysty tekst z ukośnikami /) */
 .has-submenu {
   position: relative;
 }
@@ -172,69 +180,58 @@ header.site-header {
   top: 100%;
   left: -20px;
   right: -20px;
-  height: 20px;
+  height: 24px;
 }
 
-.nav-submenu {
+.nav-submenu-clean {
   position: absolute;
-  top: calc(100% + 10px);
+  top: calc(100% + 14px);
   left: 50%;
-  transform: translateX(-50%) translateY(6px);
-  background: #ffffff;
-  padding: 8px 18px;
-  border-radius: 9999px;
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08), 0 2px 8px rgba(0, 158, 181, 0.15);
-  border: 1px solid rgba(0, 158, 181, 0.3);
+  transform: translateX(-50%) translateY(4px);
+  background: rgba(255, 255, 255, 0.98);
+  border: none;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+  border-bottom: 2px solid var(--aura-teal);
+  padding: 8px 16px;
   display: flex;
   align-items: center;
-  gap: 16px;
-  list-style: none;
+  gap: 8px;
   margin: 0;
   opacity: 0;
   visibility: hidden;
-  transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+  transition: all 0.25s ease;
   pointer-events: none;
   z-index: 1200;
   white-space: nowrap;
 }
 
-.has-submenu:hover .nav-submenu,
-.has-submenu:focus-within .nav-submenu {
+.has-submenu:hover .nav-submenu-clean,
+.has-submenu:focus-within .nav-submenu-clean {
   opacity: 1;
   visibility: visible;
   transform: translateX(-50%) translateY(0);
   pointer-events: auto;
 }
 
-.submenu-link {
+.sub-clean-link {
   font-family: var(--font-main);
-  font-size: 0.92rem;
+  font-size: 0.84rem;
   font-weight: 500;
-  color: #222222;
+  color: #2b3035;
   text-decoration: none;
-  letter-spacing: 0.03em;
-  padding: 2px 4px;
+  letter-spacing: 0.02em;
+  padding: 2px 3px;
   transition: var(--transition);
-  position: relative;
 }
 
-.submenu-link::after {
-  content: '';
-  position: absolute;
-  bottom: -2px;
-  left: 0;
-  width: 0;
-  height: 1.5px;
-  background: var(--aura-teal);
-  transition: width 0.25s ease;
-}
-
-.submenu-link:hover {
+.sub-clean-link:hover {
   color: var(--aura-teal);
 }
 
-.submenu-link:hover::after {
-  width: 100%;
+.sub-sep {
+  color: #bcc3c8;
+  font-size: 0.8rem;
+  user-select: none;
 }
 
 /* Kolumna z okrągłym przyciskiem (dokładnie 101px jak na obecnej stronie) i ikonami SoMe pod spodem */
@@ -1192,4 +1189,389 @@ select.field-underline {
     width: 100%;
     max-width: 302px;
   }
+}
+
+/* =========================================================
+   SZEF KUCHNI: ROMAN WEGNEROWICZ (W DZIALE O NAS)
+   ========================================================= */
+.chef-profile-section {
+  margin-top: 56px;
+  padding-top: 48px;
+  border-top: 1px solid var(--aura-border);
+}
+
+.chef-profile-card {
+  display: grid;
+  grid-template-columns: 360px 1fr;
+  gap: 52px;
+  align-items: center;
+  background: #ffffff;
+}
+
+.chef-photo-col {
+  position: relative;
+}
+
+.chef-photo {
+  width: 100%;
+  max-width: 360px;
+  height: 480px;
+  object-fit: cover;
+  object-position: top center;
+  border-radius: var(--radius-md);
+  box-shadow: 0 16px 36px rgba(0, 0, 0, 0.08);
+  display: block;
+}
+
+.chef-info-col {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.chef-title {
+  font-family: var(--font-heading);
+  font-size: clamp(2rem, 3.5vw, 2.7rem);
+  font-weight: 500;
+  color: var(--aura-teal-text);
+  margin-bottom: 8px;
+}
+
+.teal-divider-left {
+  margin: 0 0 24px 0;
+  width: 50px;
+  height: 2px;
+  background-color: var(--aura-teal);
+}
+
+.chef-lead {
+  font-size: 1.15rem;
+  font-weight: 500;
+  color: #1f2326;
+  line-height: 1.75;
+  margin-bottom: 16px;
+}
+
+.chef-desc {
+  font-size: 1.02rem;
+  font-weight: 300;
+  color: #4a4a4a;
+  line-height: 1.8;
+  margin: 0;
+}
+
+@media (max-width: 860px) {
+  .chef-profile-card {
+    grid-template-columns: 1fr;
+    gap: 32px;
+    text-align: center;
+  }
+  .chef-photo {
+    margin: 0 auto;
+    max-width: 320px;
+    height: 380px;
+  }
+  .teal-divider-left {
+    margin: 0 auto 20px auto;
+  }
+}
+
+/* =========================================================
+   PODSTRONA KARTY MENU (menu.html)
+   ========================================================= */
+.menu-main-content {
+  background-color: #ffffff;
+  padding-bottom: 80px;
+}
+
+.menu-hero {
+  padding-bottom: 12px;
+}
+
+.menu-page-wrapper {
+  max-width: 1140px;
+  margin: 0 auto;
+  padding: 0 24px 80px;
+}
+
+/* Przyklejany pasek kategorii menu na górze */
+.menu-nav-sticky-section {
+  position: sticky;
+  top: 104px; /* bezpośrednio pod nagłówkiem */
+  z-index: 850;
+  background-color: rgba(255, 255, 255, 0.98);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  padding: 16px 12px 14px;
+  border-bottom: 1px solid rgba(0, 158, 181, 0.18);
+  margin-bottom: 40px;
+  text-align: center;
+}
+
+.menu-categories-nav {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  overflow-x: auto;
+  scrollbar-width: none;
+}
+
+.menu-categories-nav::-webkit-scrollbar {
+  display: none;
+}
+
+.categories-list {
+  display: inline-flex;
+  align-items: center;
+  list-style: none;
+  gap: 12px;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+}
+
+.category-item {
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.category-btn {
+  background: transparent;
+  border: none;
+  font-family: var(--font-main);
+  font-size: 1.02rem;
+  font-weight: 500;
+  color: #333333;
+  cursor: pointer;
+  padding: 4px 6px;
+  transition: var(--transition);
+  position: relative;
+  letter-spacing: 0.02em;
+  white-space: nowrap;
+}
+
+.category-btn:hover {
+  color: var(--aura-teal);
+}
+
+.category-btn.active {
+  color: var(--aura-teal);
+  font-weight: 700;
+}
+
+.category-btn.active::after {
+  content: '';
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background-color: var(--aura-teal);
+}
+
+.category-slash {
+  color: #c0c6ca;
+  font-size: 0.95rem;
+  user-select: none;
+}
+
+/* Dopisek o alergenach pod kategoriami */
+.menu-allergens-notice {
+  margin-top: 10px;
+  text-align: center;
+}
+
+.allergens-hint-line {
+  font-size: 0.88rem;
+  font-weight: 300;
+  color: #666666;
+  margin: 0;
+}
+
+.allergens-hint-sub {
+  font-size: 0.85rem;
+  margin: 2px 0 0;
+}
+
+.allergens-scroll-link {
+  color: var(--aura-teal);
+  text-decoration: underline;
+  transition: var(--transition);
+  font-weight: 500;
+}
+
+.allergens-scroll-link:hover {
+  color: var(--aura-teal-dark);
+}
+
+/* Panele kategorii dań */
+.menu-category-panel {
+  display: none;
+  animation: fadeInPanel 0.35s ease forwards;
+}
+
+.menu-category-panel.active {
+  display: block;
+}
+
+@keyframes fadeInPanel {
+  from { opacity: 0; transform: translateY(6px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.category-panel-header {
+  text-align: center;
+  margin-bottom: 36px;
+}
+
+.category-title {
+  font-family: var(--font-heading);
+  font-size: clamp(2rem, 3.5vw, 2.7rem);
+  font-weight: 500;
+  color: var(--aura-teal-text);
+  margin-bottom: 8px;
+}
+
+.category-subsections {
+  display: flex;
+  flex-direction: column;
+  gap: 48px;
+}
+
+.subsection-title {
+  font-family: var(--font-heading);
+  font-size: 1.4rem;
+  font-weight: 600;
+  color: #1f2326;
+  margin-bottom: 24px;
+  padding-bottom: 8px;
+  border-bottom: 1.5px solid #edf1f3;
+  letter-spacing: 0.02em;
+}
+
+.menu-items-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 28px 48px;
+}
+
+@media (max-width: 820px) {
+  .menu-items-grid {
+    grid-template-columns: 1fr;
+    gap: 22px;
+  }
+}
+
+.menu-item-card {
+  display: flex;
+  flex-direction: column;
+}
+
+.menu-item-header {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 12px;
+  margin-bottom: 4px;
+}
+
+.menu-item-name {
+  font-family: var(--font-main);
+  font-size: 1.12rem;
+  font-weight: 600;
+  color: #181c1f;
+  margin: 0;
+  letter-spacing: 0.01em;
+}
+
+.menu-item-dots {
+  flex-grow: 1;
+  border-bottom: 1px dotted #c5cbd0;
+  margin: 0 4px;
+  min-width: 16px;
+  align-self: center;
+  height: 1px;
+}
+
+.menu-item-price {
+  font-family: var(--font-main);
+  font-size: 1.15rem;
+  font-weight: 700;
+  color: var(--aura-teal-dark);
+  white-space: nowrap;
+}
+
+.menu-item-desc {
+  font-size: 0.95rem;
+  font-weight: 300;
+  color: #555d65;
+  line-height: 1.55;
+  margin: 0 0 4px;
+}
+
+.menu-item-allergens {
+  font-size: 0.82rem;
+  font-weight: 400;
+  color: #7b848c;
+  margin: 0;
+}
+
+.allergens-label {
+  font-weight: 600;
+  color: #5c646c;
+}
+
+/* Lista alergenów na dole strony */
+.menu-allergens-section {
+  margin-top: 80px;
+  padding: 48px 36px;
+  background-color: #fbfcfc;
+  border: 1px solid var(--aura-border);
+  border-radius: var(--radius-md);
+}
+
+.allergens-container {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.allergens-title {
+  font-family: var(--font-heading);
+  font-size: 1.85rem;
+  font-weight: 500;
+  color: var(--aura-teal-text);
+  text-align: center;
+  margin-bottom: 4px;
+}
+
+.allergens-subtitle {
+  font-size: 0.95rem;
+  font-weight: 400;
+  color: #555d65;
+  text-align: center;
+  margin-bottom: 28px;
+}
+
+.allergens-numbered-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.allergens-numbered-list li {
+  font-size: 0.88rem;
+  font-weight: 300;
+  line-height: 1.6;
+  color: #333333;
+}
+
+.allergens-numbered-list strong {
+  font-weight: 600;
+  color: var(--aura-teal-dark);
+  margin-right: 4px;
 }
