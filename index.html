@@ -7,9 +7,12 @@
   <meta name="description" content="Restauracja Aura à la carte na rynku w Ostrowie Wielkopolskim. Nowoczesna kuchnia polska i europejska, autorskie dania, wyjątkowa atmosfera. Zawsze w dobrej aurze.">
   <meta name="theme-color" content="#4b8a9b">
   <link rel="icon" type="image/png" href="assets/images/Aura_ikona.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,300;1,400&family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;0,9..144,500;0,9..144,600;0,9..144,700;1,9..144,400;1,9..144,500;1,9..144,600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="assets/css/style.css">
 </head>
-<body data-top-version="1">
+<body data-top-version="3">
 
   <!-- =========================================================
        FLOATING VERSION SWITCHER (Wybierz wersję nagłówka)
@@ -17,9 +20,9 @@
   <div class="version-switcher" id="versionSwitcher" title="Kliknij, aby przełączyć wariant góry strony">
     <span class="switcher-label">Wariant nagłówka:</span>
     <div class="switcher-btns">
-      <button type="button" class="switch-btn active" data-version="1">1. Styl Pastis (Petrol)</button>
+      <button type="button" class="switch-btn" data-version="1">1. Styl Pastis (Petrol)</button>
       <button type="button" class="switch-btn" data-version="2">2. Biały pasek</button>
-      <button type="button" class="switch-btn" data-version="3">3. Seledynowy</button>
+      <button type="button" class="switch-btn active" data-version="3">3. Seledynowy (Wybrany)</button>
     </div>
   </div>
 
@@ -56,7 +59,9 @@
               <svg viewBox="0 0 24 24"><path d="M9 8h-3v4h3v12h5v-12h3.642l.358-4h-4v-1.667c0-.955.192-1.333 1.115-1.333h2.885v-5h-3.808c-3.596 0-5.192 1.583-5.192 4.615v3.385z"/></svg>
             </a>
           </div>
-          <button type="button" class="btn-book open-modal-trigger">Rezerwuj stolik</button>
+          <button type="button" class="btn-book-circle open-modal-trigger" aria-label="Rezerwuj stolik">
+            <span>Rezerwuj<br>stolik</span>
+          </button>
         </div>
       </div>
     </div>
@@ -82,7 +87,7 @@
         </nav>
 
         <div class="header-actions">
-          <button type="button" class="btn-book open-modal-trigger">Rezerwuj stolik</button>
+          <button type="button" class="btn-book-circle open-modal-trigger" aria-label="Rezerwuj stolik"><span>Rezerwuj<br>stolik</span></button>
           <div class="some-icons">
             <a href="https://www.instagram.com/restauracja_aura/" target="_blank" rel="noopener" class="some-link" aria-label="Instagram">
               <svg viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
@@ -92,6 +97,7 @@
             </a>
           </div>
           <button type="button" class="hamburger-circle menu-open-trigger" aria-label="Menu rozwijane">
+            <span></span>
             <span></span>
             <span></span>
             <span></span>
@@ -121,7 +127,7 @@
         </nav>
 
         <div class="header-actions">
-          <button type="button" class="btn-book open-modal-trigger">Rezerwuj stolik</button>
+          <button type="button" class="btn-book-circle open-modal-trigger" aria-label="Rezerwuj stolik"><span>Rezerwuj<br>stolik</span></button>
           <div class="some-icons">
             <a href="https://www.instagram.com/restauracja_aura/" target="_blank" rel="noopener" class="some-link" aria-label="Instagram">
               <svg viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
@@ -130,11 +136,7 @@
               <svg viewBox="0 0 24 24"><path d="M9 8h-3v4h3v12h5v-12h3.642l.358-4h-4v-1.667c0-.955.192-1.333 1.115-1.333h2.885v-5h-3.808c-3.596 0-5.192 1.583-5.192 4.615v3.385z"/></svg>
             </a>
           </div>
-          <button type="button" class="hamburger-btn menu-open-trigger" aria-label="Menu rozwijane">
-            <span></span>
-            <span></span>
-            <span></span>
-          </button>
+          <button type="button" class="hamburger-circle v3-hamburger menu-open-trigger" aria-label="Menu rozwijane"><span></span><span></span><span></span><span></span></button>
         </div>
       </div>
     </div>
@@ -146,11 +148,6 @@
        ========================================================= -->
   <main>
     <section class="hero-videos-section" id="hero">
-      <div class="hero-header-text">
-        <p class="hero-subtitle">Kulinarne doświadczenie na rynku w Ostrowie</p>
-        <h1 class="hero-title">Odkryj <strong>prawdziwą Aurę</strong> smaku</h1>
-      </div>
-
       <div class="videos-grid">
 
         <!-- FILM 1: Miejsce do którego chce się wracać (Klatka startowa: Rynek z góry) -->
@@ -162,21 +159,7 @@
             playsinline 
             muted>
           </video>
-          <div class="video-overlay">
-            <span class="video-badge">Klimat & Rynek</span>
-            <div class="play-hint">
-              <div class="play-icon-circle">
-                <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
-                  <path d="M8 5v14l11-7z"/>
-                </svg>
-              </div>
-              <div class="play-hint-text">
-                <h3 class="video-card-title">Miejsce z duszą</h3>
-                <p class="video-card-desc">Najedź kursorem, by poczuć klimat</p>
-              </div>
-            </div>
-          </div>
-        </article>
+          </article>
 
         <!-- FILM 2: Mule / Owoce morza (Klatka startowa: 00:00:01) -->
         <article class="video-card" data-video="2" data-start="1.0" tabindex="0" aria-label="Odtwórz film: Świeże mule i owoce morza">
@@ -187,21 +170,7 @@
             playsinline 
             muted>
           </video>
-          <div class="video-overlay">
-            <span class="video-badge">Owoce Morza</span>
-            <div class="play-hint">
-              <div class="play-icon-circle">
-                <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
-                  <path d="M8 5v14l11-7z"/>
-                </svg>
-              </div>
-              <div class="play-hint-text">
-                <h3 class="video-card-title">Świeże mule</h3>
-                <p class="video-card-desc">Najedź kursorem, by zobaczyć przygotowanie</p>
-              </div>
-            </div>
-          </div>
-        </article>
+          </article>
 
         <!-- FILM 3: Soczysta Polędwica Wołowa (Klatka startowa: 00:00:19) -->
         <article class="video-card" data-video="3" data-start="19.0" tabindex="0" aria-label="Odtwórz film: Soczysta polędwica wołowa">
@@ -212,21 +181,7 @@
             playsinline 
             muted>
           </video>
-          <div class="video-overlay">
-            <span class="video-badge">Danie Główne</span>
-            <div class="play-hint">
-              <div class="play-icon-circle">
-                <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
-                  <path d="M8 5v14l11-7z"/>
-                </svg>
-              </div>
-              <div class="play-hint-text">
-                <h3 class="video-card-title">Soczysta polędwica</h3>
-                <p class="video-card-desc">Najedź kursorem, by podejrzeć mistrzowską kuchnię</p>
-              </div>
-            </div>
-          </div>
-        </article>
+          </article>
 
       </div>
     </section>
@@ -238,51 +193,49 @@
       <div class="about-container">
         
         <header class="about-header">
-          <span class="about-eyebrow">Nasza Pasja & Tradycja</span>
-          <h2 class="about-heading">Witamy w <span>restauracji Aura</span></h2>
+          <h2 class="about-heading">Witamy w restauracji <span class="brand-italic">Aura</span></h2>
+          <div class="teal-divider-line"></div>
         </header>
 
-        <div class="about-content-grid">
-          
-          <div class="about-text">
-            <p class="lead">
-              Restauracja Aura to wyjątkowe miejsce na kulinarnej mapie ostrowskiego rynku, w którym gościmy Was już 4. rok. Stworzone na bazie doświadczeń i pasji do tworzenia oraz serwowania jedzenia od ponad 30 lat.
-            </p>
+        <div class="about-intro-text">
+          <p class="about-lead">
+            Restauracja Aura to wyjątkowe miejsce na kulinarnej mapie ostrowskiego rynku, w którym gościmy Was już 4. rok. Stworzone na bazie doświadczeń i pasji do tworzenia oraz serwowania jedzenia od ponad 30 lat.
+          </p>
 
-            <p>
-              Drodzy Goście, proponujemy Wam nowoczesną odsłonę kuchni polskiej, ale także dania kuchni europejskiej, wegańskiej i wegetariańskiej.
-            </p>
+          <p>
+            Drodzy Goście, proponujemy Wam nowoczesną odsłonę kuchni polskiej, ale także dania kuchni europejskiej, wegańskiej i wegetariańskiej.
+          </p>
 
-            <p>
-              Możecie spędzić w Aurze cały dzień… zaczynając śniadaniem i kończąc kolacją. Aura to miejsce, w którym dobrze zjesz, miło spędzisz czas z przyjaciółmi i rodziną, we wnętrzach, w których poczujesz spokój, radość i relaks. Miło nam będzie Was gościć!
-            </p>
+          <p>
+            Możecie spędzić w Aurze cały dzień… zaczynając śniadaniem i kończąc kolacją.
+          </p>
 
-            <p>
-              Od trzech dekad z miłością i ogromną radością prowadzimy kuchnię dla mieszkańców Ostrowa i nie tylko! Lata doświadczenia, profesjonalny zespół i zamiłowanie do gotowania (i pieczenia!) przyczyniły się do stworzenia silnej marki na mapie Ostrowa. Prawdopodobnie każdy mieszkaniec Ostrowa zna Bistro Bravo (i prawie każdy jego kuchnię lub słynne ciasta). Dziękujemy za zaufanie i za to, że wspólnie z nami, codzień tworzycie tę AURĘ.
-            </p>
+          <p>
+            Aura to miejsce, w którym dobrze zjesz, miło spędzisz czas z przyjaciółmi i rodziną, we wnętrzach, w których poczujesz spokój, radość i relaks. Miło nam będzie Was gościć!
+          </p>
 
-            <div class="about-features">
-              <div class="feature-box">
-                <h4>30+ Lat Pasji</h4>
-                <p>Doświadczenie wywodzące się z uwielbianego Bistro Bravo.</p>
-              </div>
-              <div class="feature-box">
-                <h4>Świeże Składniki</h4>
-                <p>Nowoczesna kuchnia polska, europejska i sezonowa.</p>
-              </div>
+          <p>
+            Od trzech dekad z miłością i ogromną radością prowadzimy kuchnię dla mieszkańców Ostrowa i nie tylko! Lata doświadczenia, profesjonalny zespół i zamiłowanie do gotowania (i pieczenia!) przyczyniły się do stworzenia silnej marki na mapie Ostrowa. Prawdopodobnie każdy mieszkaniec Ostrowa zna Bistro Bravo (i prawie każdy jego kuchnię lub słynne ciasta). Dziękujemy za zaufanie i za to, że wspólnie z nami, codzień tworzycie tę AURĘ.
+          </p>
+        </div>
+
+        <!-- HIGHLIGHTS BEZ BOKSÓW (Załącznik 5) Z SELEDYNOWYMI KULAMI AURA -->
+        <div class="about-highlights">
+          <div class="highlight-item">
+            <span class="teal-sphere" aria-hidden="true"></span>
+            <div class="highlight-content">
+              <h3 class="highlight-title">30+ Lat Pasji</h3>
+              <p class="highlight-desc">Doświadczenie wywodzące się z uwielbianego Bistro Bravo.</p>
             </div>
           </div>
 
-          <div class="about-visual">
-            <div class="about-image-card">
-              <img src="assets/images/wnetrze_sali_restauracyjnej.jpg" alt="Wnętrze restauracji Aura na rynku w Ostrowie">
-            </div>
-            <div class="heritage-badge">
-              <div class="num">30+</div>
-              <div class="lbl">Lat tradycji kulinarnej</div>
+          <div class="highlight-item">
+            <span class="teal-sphere" aria-hidden="true"></span>
+            <div class="highlight-content">
+              <h3 class="highlight-title">Świeże Składniki</h3>
+              <p class="highlight-desc">Nowoczesna kuchnia polska, europejska i sezonowa.</p>
             </div>
           </div>
-
         </div>
 
       </div>

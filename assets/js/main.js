@@ -15,8 +15,11 @@ document.addEventListener('DOMContentLoaded', () => {
     localStorage.setItem('aura_top_version', version);
   }
 
-  // Load saved version or default to version 1
-  const savedVersion = localStorage.getItem('aura_top_version') || '1';
+  // Load saved version or default to version 3 (wybrana przez użytkownika)
+  let savedVersion = localStorage.getItem('aura_top_version');
+  if (!savedVersion || savedVersion === '1') {
+    savedVersion = '3';
+  }
   setTopVersion(savedVersion);
 
   switchBtns.forEach(btn => {
