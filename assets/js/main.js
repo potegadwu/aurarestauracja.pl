@@ -188,8 +188,12 @@ document.addEventListener('DOMContentLoaded', () => {
         return;
       }
 
-      // Hide form and show confirmation message
+      // Hide form and form heading ("usun naglowek"), show clean confirmation message
       resPageForm.style.display = 'none';
+      const formHeading = document.getElementById('formHeading');
+      if (formHeading) {
+        formHeading.style.display = 'none';
+      }
       if (resSuccessMessage) {
         resSuccessMessage.classList.add('active');
         resSuccessMessage.scrollIntoView({ behavior: 'smooth', block: 'center' });

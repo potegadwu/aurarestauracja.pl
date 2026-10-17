@@ -761,64 +761,41 @@ footer.site-footer {
   color: #111111;
 }
 
-.res-notice-box {
-  background-color: #f4fbfd;
-  border-left: 4px solid var(--aura-teal);
-  border-radius: var(--radius-sm);
-  padding: 24px 28px;
-  margin-bottom: 48px;
-  box-shadow: 0 4px 16px rgba(0, 158, 181, 0.06);
+/* Informacja o zaliczce (czysty tekst bez ramek i bez tła) */
+.res-notice-clean {
+  margin-bottom: 36px;
 }
 
-.res-notice-box p {
-  font-size: 1.02rem;
+.res-notice-clean p {
+  font-size: 1.05rem;
   font-weight: 400;
-  line-height: 1.75;
+  line-height: 1.8;
   color: #2b3035;
-  margin-bottom: 12px;
-}
-
-.res-email-link {
-  display: inline-flex;
-  align-items: center;
-  gap: 8px;
-  color: var(--aura-teal);
-  font-weight: 600;
-  text-decoration: underline;
-  transition: var(--transition);
-}
-
-.res-email-link:hover {
-  color: var(--aura-teal-dark);
+  margin: 0;
 }
 
 .res-section-header {
-  font-size: 1.12rem;
+  font-size: 1.15rem;
   font-weight: 600;
   letter-spacing: 0.12em;
   text-transform: uppercase;
   color: var(--aura-teal);
-  margin-bottom: 20px;
+  margin-bottom: 16px;
+}
+
+/* Opcje rezerwacji (czysty tekst bez ramek/kart) */
+.res-options-section {
+  margin-bottom: 36px;
 }
 
 .res-options-list {
   display: flex;
   flex-direction: column;
-  gap: 16px;
-  margin-bottom: 48px;
+  gap: 18px;
 }
 
-.res-option-card {
-  background: #ffffff;
-  border: 1px solid rgba(0, 158, 181, 0.2);
-  border-radius: var(--radius-md);
-  padding: 22px 26px;
-  transition: var(--transition);
-}
-
-.res-option-card:hover {
-  border-color: var(--aura-teal);
-  box-shadow: 0 6px 20px rgba(0, 158, 181, 0.08);
+.res-option-item {
+  padding: 0;
 }
 
 .res-option-title {
@@ -826,50 +803,34 @@ footer.site-footer {
   font-size: 1.25rem;
   font-weight: 600;
   color: #1f2326;
-  margin-bottom: 6px;
+  margin-bottom: 4px;
 }
 
 .res-option-desc {
   font-size: 1.02rem;
   font-weight: 300;
   color: #4a4a4a;
-  line-height: 1.65;
+  line-height: 1.7;
   margin: 0;
 }
 
-.res-rules-card {
-  background: #fbfcfc;
-  border-radius: var(--radius-md);
-  padding: 28px 32px;
-  margin-bottom: 64px;
-  border: 1px solid var(--aura-border);
+/* Ważne informacje (czysty tekst bez ramek i bez bulletów) */
+.res-rules-section {
+  margin-bottom: 52px;
 }
 
-.res-rules-card ul {
-  list-style: none;
-  padding: 0;
-  margin: 0;
+.res-rules-clean {
   display: flex;
   flex-direction: column;
-  gap: 14px;
+  gap: 10px;
 }
 
-.res-rules-card li {
-  position: relative;
-  padding-left: 28px;
+.res-rule-line {
   font-size: 1.02rem;
   font-weight: 300;
   color: #333333;
-  line-height: 1.65;
-}
-
-.res-rules-card li::before {
-  content: '•';
-  position: absolute;
-  left: 8px;
-  top: -2px;
-  color: var(--aura-teal);
-  font-size: 1.4rem;
+  line-height: 1.7;
+  margin: 0;
 }
 
 /* =========================================================
@@ -1065,55 +1026,43 @@ select.field-underline {
   box-shadow: 0 8px 24px rgba(0, 158, 181, 0.45);
 }
 
-/* Success notification message */
-.res-success-card {
+/* Komunikat potwierdzenia (Czysty tekst na białym tle, bez ramek, bez ptaszka, zwykły font wycentrowany) */
+.res-success-clean {
   display: none;
-  background: #f0fafb;
-  border: 1px solid var(--aura-teal);
-  border-radius: var(--radius-md);
-  padding: 40px 32px;
   text-align: center;
-  box-shadow: 0 10px 30px rgba(0, 158, 181, 0.12);
-  margin-top: 20px;
+  padding: 64px 20px 48px;
+  font-family: var(--font-main);
+  background: transparent;
+  border: none;
+  box-shadow: none;
 }
 
-.res-success-card.active {
+.res-success-clean.active {
   display: block;
-  animation: fadeInSuccess 0.4s ease forwards;
+  animation: fadeInClean 0.4s ease forwards;
 }
 
-@keyframes fadeInSuccess {
-  from { opacity: 0; transform: translateY(12px); }
+@keyframes fadeInClean {
+  from { opacity: 0; transform: translateY(8px); }
   to { opacity: 1; transform: translateY(0); }
 }
 
-.res-success-card .success-check-circle {
-  width: 56px;
-  height: 56px;
-  background: var(--aura-teal);
-  color: #ffffff;
-  border-radius: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 1.8rem;
-  margin: 0 auto 20px;
-}
-
-.res-success-card .success-main-text {
-  font-family: var(--font-heading);
-  font-size: 1.45rem;
-  font-weight: 600;
-  color: #1f2326;
-  margin-bottom: 12px;
-  line-height: 1.4;
-}
-
-.res-success-card .success-sub-text {
-  font-size: 1.15rem;
-  color: var(--aura-teal-dark);
+.res-success-clean .success-line-1 {
+  font-family: var(--font-main);
+  font-size: 1.35rem;
   font-weight: 500;
+  color: #1f2326;
+  margin-bottom: 10px;
+  line-height: 1.5;
+}
+
+.res-success-clean .success-line-2 {
+  font-family: var(--font-main);
+  font-size: 1.15rem;
+  font-weight: 400;
+  color: #4a4a4a;
   line-height: 1.6;
+  margin: 0;
 }
 
 /* =========================================================
