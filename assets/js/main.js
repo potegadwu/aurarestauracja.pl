@@ -229,6 +229,19 @@ document.addEventListener('DOMContentLoaded', () => {
       }
     });
 
+    // Ukryj tabelę alergenów oraz dopisek dla: alkohole, napoje zimne, napoje gorące (ciepłe)
+    const noAllergenCategories = ['alkohole', 'napoje-zimne', 'napoje-gorace'];
+    const allergensSection = document.getElementById('alergeny');
+    const allergensNotice = document.querySelector('.menu-allergens-notice');
+
+    if (noAllergenCategories.includes(catId)) {
+      if (allergensSection) allergensSection.style.display = 'none';
+      if (allergensNotice) allergensNotice.style.display = 'none';
+    } else {
+      if (allergensSection) allergensSection.style.display = 'block';
+      if (allergensNotice) allergensNotice.style.display = 'block';
+    }
+
     if (shouldScroll && targetPanel) {
       const stickyNav = document.querySelector('.menu-nav-sticky-section');
       const offset = (stickyNav ? stickyNav.offsetHeight : 120) + 90;
