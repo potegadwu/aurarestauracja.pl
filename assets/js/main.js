@@ -88,14 +88,16 @@ document.addEventListener('DOMContentLoaded', () => {
   const closeBtn = document.getElementById('drawerCloseBtn');
 
   function openDrawer() {
+    if (!drawer) return;
     drawer.classList.add('open');
-    backdrop.classList.add('open');
+    if (backdrop) backdrop.classList.add('open');
     document.body.style.overflow = 'hidden';
   }
 
   function closeDrawer() {
+    if (!drawer) return;
     drawer.classList.remove('open');
-    backdrop.classList.remove('open');
+    if (backdrop) backdrop.classList.remove('open');
     document.body.style.overflow = '';
   }
 
