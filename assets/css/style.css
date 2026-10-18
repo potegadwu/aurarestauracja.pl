@@ -2006,3 +2006,60 @@ select.field-underline {
   }
 }
 
+/* =========================================================
+   PASEK 3 SZKICÓW NAD STOPKĄ (DOTYKAJĄCE SIĘ, BEZ ODSTĘPU)
+   ========================================================= */
+.sketches-strip-section {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  background-color: #faf7f2;
+  overflow: hidden;
+  line-height: 0;
+  border-top: 1px solid #ede8e1;
+}
+
+.sketches-strip-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 0; /* stykają się ze sobą */
+  width: 100%;
+  max-width: 1600px;
+  margin: 0 auto;
+  padding: 0;
+}
+
+.sketch-strip-item {
+  width: 100%;
+  overflow: hidden;
+  margin: 0;
+  padding: 0;
+  line-height: 0;
+  position: relative;
+  background-color: #faf7f2;
+}
+
+.sketch-strip-img {
+  width: 100%;
+  height: clamp(440px, 40vw, 640px);
+  object-fit: cover;
+  object-position: center 30%;
+  display: block;
+  transition: transform 0.45s ease, filter 0.45s ease;
+}
+
+.sketch-strip-item:hover .sketch-strip-img {
+  transform: scale(1.025);
+}
+
+@media (max-width: 768px) {
+  .sketches-strip-grid {
+    grid-template-columns: 1fr;
+  }
+  .sketch-strip-img {
+    height: 420px;
+    object-position: center 25%;
+  }
+}
+
+
