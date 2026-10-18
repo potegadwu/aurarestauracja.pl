@@ -62,19 +62,46 @@
       </p>
     </section>
 
-    <!-- SEKCJA OFERT PRACY -->
+    <!-- =========================================================
+         PODMENU WYBORU STANOWISKA (JAK W DZIALE MENU, BEZ RAMEK, BEZ BEŻU)
+         ========================================================= -->
+    <section class="career-nav-sticky-section">
+      <nav class="career-categories-nav" aria-label="Wybierz stanowisko">
+        <ul class="categories-list">
+          <li class="category-item">
+            <button type="button" class="career-tab-btn active" data-position="manager">
+              Manager / Managerka
+            </button>
+            <span class="category-slash" aria-hidden="true">/</span>
+          </li>
+          <li class="category-item">
+            <button type="button" class="career-tab-btn" data-position="kelner">
+              Kelner / Kelnerka
+            </button>
+            <span class="category-slash" aria-hidden="true">/</span>
+          </li>
+          <li class="category-item">
+            <button type="button" class="career-tab-btn" data-position="kucharz">
+              Kucharz / Kucharka
+            </button>
+          </li>
+        </ul>
+      </nav>
+    </section>
+
+    <!-- SEKCJA OFERT PRACY (POKAZYWANA TREŚĆ WYBRANEGO STANOWISKA) -->
     <section class="career-section-standalone" aria-label="Aktualne oferty pracy">
       <div class="career-container">
 
-        <div class="career-cards-container">
+        <div class="career-panels-wrapper">
           
           <!-- =====================================================
-               OFERTA 1: MANAGER / MANAGERKA
+               STANOWISKO 1: MANAGER / MANAGERKA
                ===================================================== -->
-          <article class="career-job-card" id="oferta-manager">
-            <div class="career-card-top">
+          <article class="career-job-panel active" id="oferta-manager" data-position="manager">
+            <div class="career-card-top-clean">
               <div>
-                <h3 class="career-job-title">Manager / Managerka</h3>
+                <h2 class="career-job-title">Manager / Managerka</h2>
                 <div class="career-job-sub">Bistro Bravo (Rynek 15) & Restauracja Aura (Rynek 21) | Ostrów Wielkopolski</div>
               </div>
               <div class="career-job-badges">
@@ -84,7 +111,7 @@
             </div>
 
             <div class="career-section-block">
-              <h4 class="career-block-title">🍴 Kim jesteśmy? Dwie restauracje przy jednym Rynku</h4>
+              <h3 class="career-block-title">🍴 Kim jesteśmy? Dwie restauracje przy jednym Rynku</h3>
               <p class="career-block-desc">
                 Prowadzimy dwie popularne i uzupełniające się restauracje w samym sercu Ostrowa Wielkopolskiego. Dzieli nas zaledwie 50 metrów spacerem przy Rynku, co daje ogromną wygodę i pozwala na świetną współpracę obu zespołów:
               </p>
@@ -98,7 +125,7 @@
             </div>
 
             <div class="career-section-block">
-              <h4 class="career-block-title">📋 Czym będziesz się zajmować? (Zakres zadań)</h4>
+              <h3 class="career-block-title">📋 Czym będziesz się zajmować? (Zakres zadań)</h3>
               <ul class="career-block-list">
                 <li><strong>Koordynacja pracy restauracji:</strong> bieżący nadzór nad salą, barem i płynną współpracą z szefami kuchni w obu lokalach.</li>
                 <li><strong>Wsparcie i budowanie zespołu:</strong> rekrutacja, wdrażanie nowych osób, szkolenia ze standardów gościnności i dbanie o dobrą, motywującą atmosferę.</li>
@@ -110,7 +137,7 @@
             </div>
 
             <div class="career-section-block">
-              <h4 class="career-block-title">🎯 Czego oczekujemy? (Doświadczenie i kompetencje)</h4>
+              <h3 class="career-block-title">🎯 Czego oczekujemy? (Doświadczenie i kompetencje)</h3>
               <ul class="career-block-list">
                 <li><strong>Doświadczenie managerskie:</strong> 3–5 lat doświadczenia na stanowisku kierowniczym w gastronomii LUB doświadczenie zarządcze w innej branży (jeśli masz talent do ludzi, organizacji i liczb, chętnie i profesjonalnie przyuczymy Cię do specyfiki gastronomii!).</li>
                 <li><strong>Zrozumienie kosztów (Prime Cost):</strong> świadomość wpływu kosztów surowca (food cost) i pracy (labor cost) na wynik lokalu oraz dążenie do utrzymania ich sumy na zdrowym poziomie ok. 55–60% przychodu.</li>
@@ -122,7 +149,7 @@
             </div>
 
             <div class="career-section-block">
-              <h4 class="career-block-title">💎 Co oferujemy w zamian? (Warunki i benefity)</h4>
+              <h3 class="career-block-title">💎 Co oferujemy w zamian? (Warunki i benefity)</h3>
               <ul class="career-block-list">
                 <li><strong>Stabilną podstawę:</strong> 8 000 – 11 000 zł brutto (umowa o pracę) lub 8 000 – 11 000 zł netto + VAT (kontrakt B2B), dopasowane do Twoich kompetencji.</li>
                 <li><strong>Comiesięczną premię za wyniki:</strong> motywujący system premiowy – ok. 20% wynagrodzenia co miesiąc za realizację uzgodnionych celów operacyjnych i sprzedażowych.</li>
@@ -133,8 +160,8 @@
               </ul>
             </div>
 
-            <div class="career-relocation-box">
-              <h4 class="career-block-title" style="margin-bottom: 8px;">🏡 Dla osób z dalszych stron: pakiet relokacyjny na start</h4>
+            <div class="career-relocation-clean">
+              <h3 class="career-block-title" style="margin-bottom: 8px;">🏡 Dla osób z dalszych stron: pakiet relokacyjny na start</h3>
               <p class="career-block-desc" style="margin-bottom: 8px;">
                 Rozważasz przeprowadzkę do Ostrowa Wielkopolskiego? Zadbamy o Ciebie! Choć w pierwszej kolejności zapraszamy osoby z regionu, jesteśmy w pełni otwarci na świetnych kandydatów z całej Polski. Jeśli zdecydujesz się na relokację, zapewniamy:
               </p>
@@ -145,9 +172,9 @@
               </ul>
             </div>
 
-            <div class="career-apply-box">
+            <div class="career-apply-clean">
               <div class="career-apply-info">
-                <h4>📬 Porozmawiajmy! Jak aplikować?</h4>
+                <h3>📬 Porozmawiajmy! Jak aplikować?</h3>
                 <p>Prześlij swoje CV z dopiskiem w tytule: <strong>„Manager – Bistro Bravo i Aura”</strong></p>
                 <p style="font-size: 0.85rem; color: #888; margin-top: 4px;">*Prosimy o dopisanie standardowej klauzuli RODO o zgodzie na przetwarzanie danych osobowych.</p>
               </div>
@@ -160,12 +187,12 @@
           </article>
 
           <!-- =====================================================
-               OFERTA 2: KELNER / KELNERKA
+               STANOWISKO 2: KELNER / KELNERKA
                ===================================================== -->
-          <article class="career-job-card" id="oferta-kelner">
-            <div class="career-card-top">
+          <article class="career-job-panel" id="oferta-kelner" data-position="kelner">
+            <div class="career-card-top-clean">
               <div>
-                <h3 class="career-job-title">Kelner / Kelnerka</h3>
+                <h2 class="career-job-title">Kelner / Kelnerka</h2>
                 <div class="career-job-sub">Restauracja Aura (Rynek 21) & Bistro Bravo (Rynek 15) | Ostrów Wielkopolski</div>
               </div>
               <div class="career-job-badges">
@@ -175,14 +202,14 @@
             </div>
 
             <div class="career-section-block">
-              <h4 class="career-block-title">🍴 Dołącz do naszego zespołu gościnności!</h4>
+              <h3 class="career-block-title">🍴 Dołącz do naszego zespołu gościnności!</h3>
               <p class="career-block-desc">
                 Szukamy serdecznych, uśmiechniętych osób z 1–3 letnim doświadczeniem w obsłudze gości, które lubią pracę z ludźmi i chcą współtworzyć wyjątkową atmosferę w naszych lokalach przy ostrowskim Rynku.
               </p>
             </div>
 
             <div class="career-section-block">
-              <h4 class="career-block-title">📋 Czym będziesz się zajmować? (Zakres zadań)</h4>
+              <h3 class="career-block-title">📋 Czym będziesz się zajmować? (Zakres zadań)</h3>
               <ul class="career-block-list">
                 <li><strong>Serdeczna gościnność:</strong> dbanie o to, by każdy gość czuł się zaopiekowany od momentu przekroczenia progu restauracji.</li>
                 <li><strong>Doradztwo i rekomendacje:</strong> z uśmiechem opowiadasz o naszych autorskich daniach, winach i koktajlach.</li>
@@ -193,7 +220,7 @@
             </div>
 
             <div class="career-section-block">
-              <h4 class="career-block-title">🎯 Czego oczekujemy?</h4>
+              <h3 class="career-block-title">🎯 Czego oczekujemy?</h3>
               <ul class="career-block-list">
                 <li><strong>Doświadczenie:</strong> 1–3 lata doświadczenia na stanowisku kelnera / kelnerki w gastronomii (mile widziane w restauracji à la carte).</li>
                 <li><strong>Pozytywne nastawienie:</strong> wysoka kultura osobista, naturalna życzliwość i uśmiech, który nie znika w godzinach szczytu.</li>
@@ -204,7 +231,7 @@
             </div>
 
             <div class="career-section-block">
-              <h4 class="career-block-title">💎 Co oferujemy w zamian?</h4>
+              <h3 class="career-block-title">💎 Co oferujemy w zamian?</h3>
               <ul class="career-block-list">
                 <li><strong>Atrakcyjne wynagrodzenie:</strong> 21 – 28 zł netto/h (stawka zależna od Twojego doświadczenia, umiejętności i zaangażowania) + <strong>bardzo dobre codzienne napiwki</strong>.</li>
                 <li><strong>Stabilność i elastyczność:</strong> umowa dopasowana do Twojej sytuacji (zlecenie lub umowa o pracę), elastyczny grafik ustalany z wyprzedzeniem.</li>
@@ -214,9 +241,9 @@
               </ul>
             </div>
 
-            <div class="career-apply-box">
+            <div class="career-apply-clean">
               <div class="career-apply-info">
-                <h4>📬 Dołącz do nas! Jak aplikować?</h4>
+                <h3>📬 Dołącz do nas! Jak aplikować?</h3>
                 <p>Prześlij CV na adres e-mail z dopiskiem: <strong>„Kelner / Kelnerka – Aura i Bistro Bravo”</strong></p>
                 <p style="font-size: 0.85rem; color: #888; margin-top: 4px;">*Prosimy o dopisanie standardowej klauzuli RODO.</p>
               </div>
@@ -229,12 +256,12 @@
           </article>
 
           <!-- =====================================================
-               OFERTA 3: KUCHARZ / KUCHARKA
+               STANOWISKO 3: KUCHARZ / KUCHARKA
                ===================================================== -->
-          <article class="career-job-card" id="oferta-kucharz">
-            <div class="career-card-top">
+          <article class="career-job-panel" id="oferta-kucharz" data-position="kucharz">
+            <div class="career-card-top-clean">
               <div>
-                <h3 class="career-job-title">Kucharz / Kucharka</h3>
+                <h2 class="career-job-title">Kucharz / Kucharka</h2>
                 <div class="career-job-sub">Restauracja Aura à la carte (Rynek 21) | Ostrów Wielkopolski</div>
               </div>
               <div class="career-job-badges">
@@ -244,14 +271,14 @@
             </div>
 
             <div class="career-section-block">
-              <h4 class="career-block-title">🍴 Gotuj z pasją w Restauracji Aura</h4>
+              <h3 class="career-block-title">🍴 Gotuj z pasją w Restauracji Aura</h3>
               <p class="career-block-desc">
                 Za naszą autorską kartą menu stoi szef kuchni Roman Wegnerowicz. Tworzymy nowoczesną odsłonę kuchni polskiej i europejskiej, opartą na świeżych, najwyższej jakości produktach i pasji do smaku. Szukamy kucharza/kucharki, który/a chce wspólnie z nami tworzyć dania, o których pamięta się na długo.
               </p>
             </div>
 
             <div class="career-section-block">
-              <h4 class="career-block-title">📋 Czym będziesz się zajmować? (Zakres zadań)</h4>
+              <h3 class="career-block-title">📋 Czym będziesz się zajmować? (Zakres zadań)</h3>
               <ul class="career-block-list">
                 <li><strong>Przygotowywanie potraw:</strong> realizacja dań z karty à la carte, menu sezonowego oraz przyjęć z dbałością o powtarzalny, wyśmienity smak i estetykę wydawki.</li>
                 <li><strong>Praca w sekcjach:</strong> samodzielne prowadzenie powierzonej sekcji (dania ciepłe / zimne / desery) w zgranej brygadzie kuchennej.</li>
@@ -261,7 +288,7 @@
             </div>
 
             <div class="career-section-block">
-              <h4 class="career-block-title">🎯 Czego oczekujemy?</h4>
+              <h3 class="career-block-title">🎯 Czego oczekujemy?</h3>
               <ul class="career-block-list">
                 <li><strong>Doświadczenie:</strong> udokumentowane doświadczenie na stanowisku kucharza / kucharki w restauracji z kuchnią à la carte.</li>
                 <li><strong>Pasja do kulinariów:</strong> szacunek do produktu, ciekawość nowych technik i zmysł estetyczny przy układaniu talerza.</li>
@@ -272,7 +299,7 @@
             </div>
 
             <div class="career-section-block">
-              <h4 class="career-block-title">💎 Co oferujemy w zamian?</h4>
+              <h3 class="career-block-title">💎 Co oferujemy w zamian?</h3>
               <ul class="career-block-list">
                 <li><strong>Atrakcyjne wynagrodzenie:</strong> stabilne zarobki adekwatne do Twoich umiejętności, zaangażowania i doświadczenia.</li>
                 <li><strong>Stabilne zatrudnienie:</strong> pewna praca na pełny etat w rozwijającej się, cenionej restauracji.</li>
@@ -283,9 +310,9 @@
               </ul>
             </div>
 
-            <div class="career-apply-box">
+            <div class="career-apply-clean">
               <div class="career-apply-info">
-                <h4>📬 Jak aplikować?</h4>
+                <h3>📬 Jak aplikować?</h3>
                 <p>Prześlij swoje CV lub zadzwoń bezpośrednio:</p>
                 <p style="font-size: 0.85rem; color: #888; margin-top: 4px;">*Prosimy o dopisanie standardowej klauzuli RODO.</p>
               </div>

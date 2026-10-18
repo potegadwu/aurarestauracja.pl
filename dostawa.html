@@ -50,101 +50,77 @@
   </header>
 
   <!-- =========================================================
-       TREŚĆ PODSTRONY DOSTAWA
+       TREŚĆ PODSTRONY DOSTAWA (CZYSTY UKŁAD BEZ RAMEK I BEŻU)
+       FILM PO LEWEJ STRONIE (BEZ ZAOKRĄGLEŃ, DOCZEPIONY DO MENU) + TEKST OBOK
        ========================================================= -->
   <main class="delivery-main-content">
     
-    <!-- HERO SEKCJA -->
-    <section class="page-hero-section">
-      <h1 class="page-title">Zamów w dostawie</h1>
-      <div class="teal-divider-line"></div>
-      <p class="delivery-sublead">
-        Autorska kuchnia Restauracji Aura prosto pod Twoje drzwi. Ciesz się wyjątkowym smakiem w domu i w pracy.
-      </p>
-    </section>
+    <section class="delivery-clean-section" aria-label="Zamów w dostawie - Restauracja Aura">
+      <div class="delivery-clean-grid">
 
-    <!-- GŁÓWNY KONTENER DOSTAWY -->
-    <section class="delivery-details-section">
-      <div class="delivery-content-grid">
-
-        <!-- LEWA KOLUMNA: FILM DOSTAWA W ELEGANCKIM FORMACIE -->
-        <div class="delivery-video-column">
-          <div class="delivery-video-card">
-            <video 
-              src="assets/videos/dostawa.mp4" 
-              poster="assets/images/poster_dostawa.jpg" 
-              class="delivery-video-player"
-              preload="metadata"
-              playsinline 
-              controls 
-              autoplay 
-              loop 
-              muted>
-            </video>
-          </div>
-          <div class="delivery-video-caption">
-            <span>Świeżość i najwyższa jakość w każdym zamówieniu</span>
-          </div>
+        <!-- LEWA STRONA: FILM DOSTAWA BEZ ZAOKRĄGLEŃ, PRZYCZEPIONY DO LINII MENU -->
+        <div class="delivery-video-wrapper">
+          <video 
+            src="assets/videos/dostawa.mp4" 
+            poster="assets/images/poster_dostawa.jpg" 
+            class="delivery-video-flush"
+            preload="metadata"
+            playsinline 
+            controls 
+            autoplay 
+            loop 
+            muted>
+          </video>
         </div>
 
-        <!-- PRAWA KOLUMNA: INFORMACJE O DOSTAWIE I ZAMAWIANIU -->
-        <div class="delivery-info-column">
-          
-          <div class="delivery-order-box">
-            <h2 class="delivery-order-title">Jak zamówić?</h2>
+        <!-- PRAWA STRONA: TREŚĆ UŁOŻONA JAK W DZIALE O NAS (CZYSTA TYPOGRAFIA, BEZ RAMEK, BEZ BEŻU) -->
+        <div class="delivery-text-wrapper">
+          <header class="delivery-text-header">
+            <h1 class="delivery-heading">Zamów w dostawie</h1>
             <div class="teal-divider-line teal-divider-left"></div>
-            <p class="delivery-order-desc">
-              Przyjmujemy zamówienia z dowozem na terenie Ostrowa Wielkopolskiego i okolic. Wybierz swoje ulubione dania z naszej karty i zadzwoń bezpośrednio:
+          </header>
+
+          <div class="delivery-text-content">
+            <p class="delivery-lead">
+              Autorska kuchnia Restauracji Aura prosto pod Twoje drzwi. Ciesz się wyjątkowym smakiem w domu i w pracy.
             </p>
-            
-            <div class="delivery-cta-buttons">
-              <a href="tel:+48535128120" class="btn-delivery-call" aria-label="Zadzwoń i zamów">
-                <span class="btn-icon">📞</span>
-                <span class="btn-text">
-                  <small>Zamówienia telefoniczne</small>
-                  <strong>+48 535 128 120</strong>
-                </span>
+
+            <p>
+              Przyjmujemy zamówienia z dowozem na terenie Ostrowa Wielkopolskiego oraz w okolicznych miejscowościach. Wszystkie dania przygotowujemy na bieżąco z najświeższych składników, dbając o każdy kulinarny detal i autorski smak.
+            </p>
+
+            <!-- SZYBKI KONTAKT I MENU (CZYSTE PRZYCISKI BEZ RAMEK I BEZ BEŻU) -->
+            <div class="delivery-actions-clean">
+              <a href="tel:+48535128120" class="btn-delivery-clean-call" aria-label="Zadzwoń i zamów">
+                <span class="btn-clean-icon">📞</span>
+                <span>Zamów telefonicznie: <strong>+48 535 128 120</strong></span>
               </a>
-              <a href="menu.html" class="btn-delivery-menu" aria-label="Zobacz menu restauracji Aura">
-                <span class="btn-icon">🍽</span>
-                <span class="btn-text">
-                  <small>Sprawdź kartę dań</small>
-                  <strong>Zobacz Menu</strong>
-                </span>
+              <a href="menu.html" class="btn-delivery-clean-menu" aria-label="Sprawdź kartę dań">
+                <span class="btn-clean-icon">🍽</span>
+                <span>Zobacz Menu</span>
               </a>
             </div>
-          </div>
 
-          <!-- KARTY SZCZEGÓŁÓW -->
-          <div class="delivery-features-grid">
-            
-            <div class="delivery-feature-item">
-              <div class="feature-icon">🕒</div>
-              <div class="feature-content">
-                <h3 class="feature-title">Godziny realizacji dostaw</h3>
-                <p><strong>Poniedziałek – Sobota:</strong> 12:00 – 21:30</p>
-                <p><strong>Niedziela:</strong> 12:00 – 21:00</p>
+            <!-- SZCZEGÓŁY REALIZACJI (BEZ RAMEK, BEZ KART, CZYSTY UKŁAD TEKSTU) -->
+            <div class="delivery-info-blocks">
+              <div class="delivery-info-block">
+                <h3 class="delivery-info-title">Godziny realizacji dostaw</h3>
+                <p>Poniedziałek – Sobota: 12:00 – 21:30</p>
+                <p>Niedziela: 12:00 – 21:00 (kuchnia czynna do 21:00)</p>
               </div>
-            </div>
 
-            <div class="delivery-feature-item">
-              <div class="feature-icon">📍</div>
-              <div class="feature-content">
-                <h3 class="feature-title">Strefa dostawy</h3>
-                <p>Realizujemy dowozy na terenie <strong>Ostrowa Wielkopolskiego</strong> oraz w okolicznych miejscowościach.</p>
+              <div class="delivery-info-block">
+                <h3 class="delivery-info-title">Strefa dostawy</h3>
+                <p>Ostrów Wielkopolski oraz okoliczne miejscowości w promieniu do kilkunastu kilometrów.</p>
               </div>
-            </div>
 
-            <div class="delivery-feature-item">
-              <div class="feature-icon">🥡</div>
-              <div class="feature-content">
-                <h3 class="feature-title">Bezpieczne pakowanie</h3>
-                <p>Dania pakujemy w certyfikowane, ekologiczne pojemniki termiczne, zachowujące odpowiednią temperaturę, chrupkość i doskonały aromat.</p>
+              <div class="delivery-info-block">
+                <h3 class="delivery-info-title">Bezpieczne pakowanie</h3>
+                <p>Dania pakujemy w certyfikowane, ekologiczne opakowania termiczne, zachowujące odpowiednią temperaturę, chrupkość i doskonały aromat potraw.</p>
               </div>
             </div>
 
           </div>
-
         </div>
 
       </div>

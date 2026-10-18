@@ -277,9 +277,48 @@ document.addEventListener('DOMContentLoaded', () => {
     }
   }
 
-  if (categoryBtns.length > 0) {
-    checkUrlHash();
-    window.addEventListener('hashchange', checkUrlHash);
+  // 7. Career Page Category Tabs Interactivity (kariera.html)
+  const careerTabBtns = document.querySelectorAll('.career-tab-btn');
+  const careerPanels = document.querySelectorAll('.career-job-panel');
+
+  function activateCareerPosition(posId) {
+    if (!posId) return;
+
+    careerTabBtns.forEach(btn => {
+      if (btn.getAttribute('data-position') === posId) {
+        btn.classList.add('active');
+      } else {
+        btn.classList.remove('active');
+      }
+    });
+
+    careerPanels.forEach(panel => {
+      if (panel.getAttribute('data-position') === posId) {
+        panel.classList.add('active');
+      } else {
+        panel.classList.remove('active');
+      }
+    });
+  }
+
+  if (careerTabBtns.length > 0 && careerPanels.length > 0) {
+    careerTabBtns.forEach(btn => {
+      btn.addEventListener('click', () => {
+        const pos = btn.getAttribute('data-position');
+        activateCareerPosition(pos);
+        if (history.replaceState) {
+          history.replaceState(null, null, `#${pos}`);
+        } else {
+          location.hash = pos;
+        }
+      });
+    });
+
+    // Check hash on page load
+    const initialPos = window.location.hash.replace('#', '').replace('oferta-', '');
+    if (initialPos && ['manager', 'kelner', 'kucharz'].includes(initialPos)) {
+      activateCareerPosition(initialPos);
+    }
   }
 });
 
